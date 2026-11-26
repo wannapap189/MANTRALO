@@ -3,7 +3,7 @@
 > MANTRALO helps people make short pauses part of everyday life through chakra education, reflection, meditation, books and structured learning. Thai positioning: “พักสักนิด กลับมาฟังตัวเอง”. This is an implementation handoff, not evidence that checkout, accounts, email or course access are live.
 
 Updated: 2026-11-26, Asia/Bangkok.
-Repository: https://github.com/wannapap189/MANTRALO (private development repository).
+Repository: https://github.com/wannapap189/MANTRALO (public source repository; website not deployed).
 Primary customer language: Thai. Use “หนังสือดิจิทัล” in Thai customer copy.
 
 ## Start here

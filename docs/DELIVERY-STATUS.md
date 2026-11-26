@@ -7,7 +7,7 @@
 - After-purchase examples for book, digital starter, full course and verified-credit upgrade, with pending/ready/expired-link states.
 - Eight transactional email drafts: pending and ready for each purchase type, HTML plus plain text.
 - New three-page React/CSS design in MagicPath, kept separate from the broader local site.
-- Updated LLMS.txt and private GitHub handoff sources.
+- Updated LLMS.txt and public GitHub handoff sources. Website deployment remains disabled.
 
 ## Validation already performed during development
 

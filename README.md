@@ -53,7 +53,7 @@ Checks may write local reports/screenshots. Some older check-script names or fix
 
 ## Status
 
-Private development handoff. No production deployment, payment, authentication, order creation, outbound email/LINE messages or paid-course access is activated by this repository. No GitHub Actions deployment or Pages configuration is included.
+Public source repository for development handoff. No production deployment, payment, authentication, order creation, outbound email/LINE messages or paid-course access is activated by this repository. No GitHub Actions deployment or Pages configuration is included.
 
 Paid book PDFs, full course media, customer/contact exports, account credentials and machine inventory scans are excluded. Included PDF files are public starter-kit drafts or the approved lesson sample, not the full paid books.
 

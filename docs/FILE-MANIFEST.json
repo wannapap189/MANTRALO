@@ -3,16 +3,6 @@
   "note": "SHA256 of working content with LF text and resolved LFS media, excluding this manifest",
   "files": [
     {
-      "path": ".gitattributes",
-      "bytes": 61,
-      "sha256": "e15c122a600152774ec8ce9abbcdcf2555e52598134628a5ae9f0c61b85131d0"
-    },
-    {
-      "path": ".gitignore",
-      "bytes": 200,
-      "sha256": "a15e12357358f007af1caa1e900c9fbe7d0093c3c9aec6fdd81d00b59c6ca90a"
-    },
-    {
       "path": "app.css",
       "bytes": 25215,
       "sha256": "70389372c5b1ab8cc1321fcf92e1594e55b2257144779d04d9075406fef047cb"
@@ -238,14 +228,14 @@
       "sha256": "96ac951c8caddd87d8a66fe0d02342127696131d3e935ce4a936dc68cf032e33"
     },
     {
-      "path": "assets/logo-small.webp",
-      "bytes": 23640,
-      "sha256": "44f98311c3404de1bb875f72ee84a2b0950117313f6b38071237f2eecfab21e1"
-    },
-    {
       "path": "assets/logo.png",
       "bytes": 1245895,
       "sha256": "a178a8378e75113203a0d2f1b3db1e6992ad65004131c630780100dd28283c53"
+    },
+    {
+      "path": "assets/logo-small.webp",
+      "bytes": 23640,
+      "sha256": "44f98311c3404de1bb875f72ee84a2b0950117313f6b38071237f2eecfab21e1"
     },
     {
       "path": "assets/logo.webp",
@@ -253,14 +243,14 @@
       "sha256": "b85ab5f302f5758adca7846d0abbf67dd99ea874a94fd616bf860f3e680e59f4"
     },
     {
-      "path": "assets/videos/emc-quiz-introduction-poster.png",
-      "bytes": 232580,
-      "sha256": "65677624869e4891d264de533591c4a20cc41fb4b5ed8cf7302275538a732c91"
-    },
-    {
       "path": "assets/videos/emc-quiz-introduction.mp4",
       "bytes": 7731051,
       "sha256": "30712b20386e96188fbb64f358a5426b67159bfe7dc60c3ef55f2449f87f5a7b"
+    },
+    {
+      "path": "assets/videos/emc-quiz-introduction-poster.png",
+      "bytes": 232580,
+      "sha256": "65677624869e4891d264de533591c4a20cc41fb4b5ed8cf7302275538a732c91"
     },
     {
       "path": "assets/videos/library/breathing-introduction.jpg",
@@ -313,14 +303,14 @@
       "sha256": "8f5e79cedd1935c26ab4a9e836bfdc656b06eafabc05d2ad48c39f8a8fc0a855"
     },
     {
-      "path": "course-long-page.js",
-      "bytes": 49326,
-      "sha256": "866e1a99d73021e8f103f3ba92e6055c5a8e22730c53d83810529577d4153c95"
-    },
-    {
       "path": "course-long.css",
       "bytes": 43504,
       "sha256": "492ff2e620a900cb1e4f07b6b37aa11acc4b35b89909fe6777e1b618f77865a6"
+    },
+    {
+      "path": "course-long-page.js",
+      "bytes": 49326,
+      "sha256": "866e1a99d73021e8f103f3ba92e6055c5a8e22730c53d83810529577d4153c95"
     },
     {
       "path": "course-page.js",
@@ -379,8 +369,8 @@
     },
     {
       "path": "docs/DELIVERY-STATUS.md",
-      "bytes": 2587,
-      "sha256": "3a573d0b9fe708730ca8b4126ba6fe8154479b6ef3a16fd6ae09eae8df9162b0"
+      "bytes": 2623,
+      "sha256": "f3f6a4ed89aa040ef3fbfa9997d048ff4017856c05081d606c3e88a69a9a8c08"
     },
     {
       "path": "ebook-offers.js",
@@ -388,14 +378,14 @@
       "sha256": "3670bac237756d61422f44d28ddb8853dd5e7f9ea63c1533f0b491c687d286d7"
     },
     {
-      "path": "ebook-sales-page.js",
-      "bytes": 19908,
-      "sha256": "5166371a271874d4802464abb3a812a4faec8337ab7244292b922c86b895e569"
-    },
-    {
       "path": "ebook-sales.css",
       "bytes": 21782,
       "sha256": "f1e453b3ffe27489c34542c708dd1abac9cb5aace7300e923e8a8c6278fc0f2c"
+    },
+    {
+      "path": "ebook-sales-page.js",
+      "bytes": 19908,
+      "sha256": "5166371a271874d4802464abb3a812a4faec8337ab7244292b922c86b895e569"
     },
     {
       "path": "followup-preview.css",
@@ -413,6 +403,11 @@
       "sha256": "200d64cbe3a8ec1e974076948f10434db53f2be423a4fa2da550d7981c838222"
     },
     {
+      "path": "free-kit.css",
+      "bytes": 10398,
+      "sha256": "d48c6197bff7f168fae74a88f96ee4927538d51602887a681298447afd93fbd1"
+    },
+    {
       "path": "free-kit-messages.js",
       "bytes": 63350,
       "sha256": "b3236fc18b2336888e77f07e6a5e59db4acf4dd7b74128fd4a98f0dc48f85f46"
@@ -421,11 +416,6 @@
       "path": "free-kit-page.js",
       "bytes": 26471,
       "sha256": "84256b0f34932ff77cf08a4306c3f2083381ae7382d3f6796c1fc9f36584d82f"
-    },
-    {
-      "path": "free-kit.css",
-      "bytes": 10398,
-      "sha256": "d48c6197bff7f168fae74a88f96ee4927538d51602887a681298447afd93fbd1"
     },
     {
       "path": "funnel/approved-terms.json",
@@ -448,14 +438,14 @@
       "sha256": "d62561a457424197180f8843de3639850b4264e73f7050b13d5a3f56a1abeef6"
     },
     {
-      "path": "funnel/connection-map.json",
-      "bytes": 3566,
-      "sha256": "04dc45aac1b35fba0cfe6560eba4f2b7b7863290421d2c41c1fe7ba887027c69"
-    },
-    {
       "path": "funnel/connection.js",
       "bytes": 4975,
       "sha256": "4a2d7db76c0fe7a613bd9783af6cc74872209dbbaccdfab2b90a5e3b4d262b46"
+    },
+    {
+      "path": "funnel/connection-map.json",
+      "bytes": 3566,
+      "sha256": "04dc45aac1b35fba0cfe6560eba4f2b7b7863290421d2c41c1fe7ba887027c69"
     },
     {
       "path": "funnel/EBOOK-OFFERS-NOTES.txt",
@@ -573,6 +563,11 @@
       "sha256": "309d7d7fc18ceace50d05c64e3a52e2ee18d16060704f8cc05e5b794eb632cde"
     },
     {
+      "path": "funnel-plan.html",
+      "bytes": 78731,
+      "sha256": "6c0d6deae4a8036716011f35d4fbbe5d201f7afec610c8fa2b213a9877dc91b1"
+    },
+    {
       "path": "funnel/preview/result-chakra1-balance.html",
       "bytes": 19228,
       "sha256": "621e1ccdd2c0f48e54df1cc4ba7f5acf974fdf3247d3899bbd26b5668da9f3eb"
@@ -658,9 +653,14 @@
       "sha256": "620d251035363a8c3f457686221b4e783dc3ec657ef765de2ae40cd69a3a3bad"
     },
     {
-      "path": "funnel-plan.html",
-      "bytes": 78731,
-      "sha256": "6c0d6deae4a8036716011f35d4fbbe5d201f7afec610c8fa2b213a9877dc91b1"
+      "path": ".gitattributes",
+      "bytes": 61,
+      "sha256": "e15c122a600152774ec8ce9abbcdcf2555e52598134628a5ae9f0c61b85131d0"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 200,
+      "sha256": "a15e12357358f007af1caa1e900c9fbe7d0093c3c9aec6fdd81d00b59c6ca90a"
     },
     {
       "path": "home-library.css",
@@ -699,8 +699,8 @@
     },
     {
       "path": "LLMS.txt",
-      "bytes": 13936,
-      "sha256": "29e2b7be14537fabad204947b1d8b7ce8c28e6ae4d0ea164099ecac4b9504e9e"
+      "bytes": 13952,
+      "sha256": "cb5e0829377b10f05c483e718efb0527c20c776c6c25c77d2578b79854d7c45f"
     },
     {
       "path": "locales/book.en.js",
@@ -738,14 +738,14 @@
       "sha256": "d18d34131f0fe7d7719d0432d1f07f616906abd2e6bf383d6be70abb82d108b9"
     },
     {
-      "path": "member-shop-page.js",
-      "bytes": 29304,
-      "sha256": "8ad223e2141cc8eff8176e93922bc1fdd407f1868de821b0093d3e3440db2033"
-    },
-    {
       "path": "member-shop.css",
       "bytes": 17022,
       "sha256": "9eb864aa82e815e7aacdc1fd652944c623172b3e0bf981d5551f7606be223b39"
+    },
+    {
+      "path": "member-shop-page.js",
+      "bytes": 29304,
+      "sha256": "8ad223e2141cc8eff8176e93922bc1fdd407f1868de821b0093d3e3440db2033"
     },
     {
       "path": "offer-options.css",
@@ -768,14 +768,14 @@
       "sha256": "3d43a03188b9e03c126a211f3f075363a7db052df7f505d1d87133f2acf667f6"
     },
     {
-      "path": "post-purchase-data.js",
-      "bytes": 8639,
-      "sha256": "9abd0b95fe3293559114d97927b342af6f599d19acc140ac899a460edee40555"
-    },
-    {
       "path": "post-purchase.css",
       "bytes": 5182,
       "sha256": "110aae6dc8ed984ad936803c4b984786698d8805b76f82ea68e321913efdfecb"
+    },
+    {
+      "path": "post-purchase-data.js",
+      "bytes": 8639,
+      "sha256": "9abd0b95fe3293559114d97927b342af6f599d19acc140ac899a460edee40555"
     },
     {
       "path": "post-purchase.html",
@@ -874,8 +874,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3146,
-      "sha256": "40e02047ab8e77be0f9935fa089bb27f5233006abf3baab4c4324c02e9672542"
+      "bytes": 3167,
+      "sha256": "2bb622dc75f38e818bedca127f03ba4976f9c3759c1e7a389f8fc009870f56a3"
     },
     {
       "path": "result-content.js",
@@ -903,14 +903,14 @@
       "sha256": "7078bfceed0a22f04671a4fb30af0b286954b4a8304cf87faab81ea591805628"
     },
     {
-      "path": "video-library-data.js",
-      "bytes": 3692,
-      "sha256": "2f491058c557bfcb41fe905f1f427b56e7c27c17af07f904867ca85a7f33ad63"
-    },
-    {
       "path": "video-library.css",
       "bytes": 9367,
       "sha256": "ce604b0f8bb2764031ad157e32a572be62c38fd7e03f9469e6d6b2dd5bb4a57a"
+    },
+    {
+      "path": "video-library-data.js",
+      "bytes": 3692,
+      "sha256": "2f491058c557bfcb41fe905f1f427b56e7c27c17af07f904867ca85a7f33ad63"
     },
     {
       "path": "video-library.js",
