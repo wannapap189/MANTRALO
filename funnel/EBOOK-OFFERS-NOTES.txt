@@ -1,0 +1,39 @@
+MANTRALO ebook offers — local preparation, 19 Nov 2026
+
+The ebook sales route is #/ebooks. A specific proposal is #/ebooks?offer=all-eight
+or another allowlisted ID from ebook-offers.js. Unknown offer IDs do not grant access.
+
+ebook-products.example.json is an inert review map for 8 individual products and
+4 package/extension offers. It is not loaded by index.html and is not a live
+Traffio configuration. Product IDs, URLs and delivery groups remain null until
+the owner asks to connect verified product offers in the existing funnel.
+
+Current local behavior:
+- Selecting an offer opens the exact price and included titles in a dialog.
+- No checkout, order, webhook, email, LINE message or entitlement is created.
+- Full paid PDFs remain outside the local web root.
+- Existing book/course routes and their guarded connection.js navigation remain.
+- A proposed-price screen does not establish a price for an existing live product.
+
+Before a future connection:
+1. Approve each manuscript and the proposed prices. Create separate product IDs
+   or variants so that old customers and old prices are not silently changed.
+2. Resolve the signed-in customer's existing purchases in the original system.
+   Offer complete-seven to avoid selling seven-days twice. Never infer purchases
+   from an email in a URL, checkbox, local storage or client-supplied price.
+3. complete-from-four requires a verified paid life-four order and is one-time.
+   Send the other 4 titles only. Check existing ownership to avoid duplicates.
+4. For all-eight, record the proposed allocation Starter 290 / other 7 books 800.
+   For life-four then complete-from-four, allocation totals must match all-eight.
+5. Course credit is a separate one-time review. Apply no more than the eligible,
+   actually paid Starter/book allocation, capped at290. Exclude shipping, other
+   ebooks, refunded payments and credit already used. Final prices and refunds
+   are verified by the server, not calculated into a payment URL by this page.
+6. After verified payment, grant only the listed PDF access groups. Course access
+   requires its own verified payment/upgrade. Free PDFs need no paid entitlement.
+7. Test order-summary amounts, duplicate payment delivery, ownership overlap,
+   partial refunds, reused credits, failed payments and member access with test
+   data before real payment is enabled. Never put paid PDF files in public assets.
+
+No publication, live product editing, contact messaging, GitHub operation or
+LLMS export was performed for this pricing preview.

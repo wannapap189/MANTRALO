@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "status": "local_preview_only",
+  "published": false,
+  "exportDeferredUntilUserRequests": true,
+  "runtime": "connection.js",
+  "runtimeConfigExample": "connection-config.example.js",
+  "resultPageMapping": "route-map.json",
+  "publicUrlsConfigured": false,
+  "campaignDisplayPricesTHB": { "book": 290, "digital": 290, "course": 2900, "maximumCredit": 290 },
+  "pricesAreNotPaymentOrEligibilityProof": true,
+  "pages": [
+    { "name": "home", "localUrl": "../index.html#/", "role": "discovery", "next": ["practice", "guide", "book", "course"] },
+    { "name": "practice", "localUrl": "../index.html#/start", "role": "free_text_practice", "next": ["guide", "book"] },
+    { "name": "guide", "localUrl": "../index.html#/library", "role": "free_draft_documents", "next": ["book", "course"] },
+    { "name": "book", "localUrl": "../index.html#/book", "role": "printed_book_sales_page", "action": "book", "configField": "actions.book", "targetUrl": null, "nativeProductId": null, "nativePageId": null },
+    { "name": "digital", "localUrl": "../index.html#/book", "role": "digital_option_on_book_page", "action": "digital", "configField": "actions.digital", "targetUrl": null, "nativeProductId": null, "nativePageId": null },
+    { "name": "course", "localUrl": "../index.html#/course", "role": "12_lesson_course_sales_page", "action": "course", "configField": "actions.course", "targetUrl": null, "nativeProductId": null, "nativePageId": null },
+    { "name": "upgrade", "localUrl": "../index.html#/course", "role": "credit_request_modal_not_checkout", "action": "upgrade", "configField": "actions.upgrade", "targetUrl": null, "nativePageId": null, "eligibilityAuthority": "existing_system_or_authorized_manual_review" },
+    { "name": "result_preview", "localUrl": "../index.html#/result", "role": "local_result_design_review", "next": ["practice", "guide", "book", "course"], "existingResultUrlsAndPageIds": "route-map.json:routes" }
+  ],
+  "existingSystemNavigation": {
+    "orderStatus": { "configField": "systemLinks.orderStatus", "targetUrl": null, "currentUiWired": false },
+    "memberLibrary": { "configField": "systemLinks.memberLibrary", "targetUrl": null, "currentUiWired": false },
+    "courseDashboard": { "configField": "systemLinks.courseDashboard", "targetUrl": null, "currentUiWired": false }
+  },
+  "verifiedSourceReferencesNotCheckoutConfiguration": [
+    { "url": "https://chakra.emcthai.com/7-chakras-testing", "purpose": "existing_quiz", "evidence": "../../web-source-audit/quiz/source-status.json" },
+    { "url": "https://unlockchakra.emcthai.com/", "purpose": "legacy_course_sales_content_15_lessons", "evidence": "../../web-source-audit/course/course-data.json" },
+    { "url": "https://unlockchakra.emcthai.com/course-dashboard", "purpose": "legacy_curriculum_reference_15_cards_not_new_12_lesson_entitlement", "evidence": "../../web-source-audit/course/syllabus-12-and-legacy-15.csv" }
+  ],
+  "knownInquiryChannel": { "type": "line_id_copy_only", "value": "@emcthai", "automaticMessages": false },
+  "pendingFields": [
+    "confirmed public order URLs and native product references for book/digital/course",
+    "confirmed existing-system credit-review URL for upgrade",
+    "shipping fee, total and delivery schedule for printed book",
+    "full Ebook file/edition and delivery entitlement",
+    "12 lesson delivery scope and access period",
+    "order status and member library URLs",
+    "existing payment, credit ledger and refund/reversal policy",
+    "native builder HTML/script support and lifecycle"
+  ]
+}

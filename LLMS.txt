@@ -1,0 +1,154 @@
+# MANTRALO — Frontend and product handoff
+
+> MANTRALO helps people make short pauses part of everyday life through chakra education, reflection, meditation, books and structured learning. Thai positioning: “พักสักนิด กลับมาฟังตัวเอง”. This is an implementation handoff, not evidence that checkout, accounts, email or course access are live.
+
+Updated: 2026-11-26, Asia/Bangkok.
+Repository: https://github.com/wannapap189/MANTRALO (private development repository).
+Primary customer language: Thai. Use “หนังสือดิจิทัล” in Thai customer copy.
+
+## Start here
+
+- [README](README.md): run the local site, source layout, current limitations.
+- [Approved commerce terms](funnel/approved-terms.json): latest owner-selected shipping and course access.
+- [Current frontend](index.html): buildless HTML/CSS/JavaScript application; run `node server.mjs`, then open http://127.0.0.1:8140/.
+- [Purchase details](purchase-details.js): inclusions, exclusions, shipping, delivery proposals and course access; includes exact English equivalents.
+- [After-purchase preview](post-purchase.html): order → email → digital library/classroom examples, without transactions or real entitlements.
+- [Email drafts](funnel/email-drafts/README.txt): eight transactional email drafts, HTML/plain text, field contract and implementation notes.
+- [MagicPath design source](design/magicpath/README.md): new React/TypeScript visual prototype. It has NOT replaced the full buildless frontend.
+- [Delivery status](docs/DELIVERY-STATUS.md): shipped preview versus remaining production work.
+
+## Two distinct frontend tracks
+
+1. Repository root is the existing, broader local preview. It contains the homepage, book/course sales, free kit, lesson sample, eight-book digital library, curated clips, reflection/result pages, member/shop prototypes, follow-up copy and after-purchase examples.
+2. `design/magicpath/` is the new MANTRALO “Daily Pause” design. It contains a React component and its CSS/assets for three state-switched pages: home, book and course. It includes a working three-minute timer, seven reflection-topic choices, free-kit/checklist dialogs, lesson accordions and non-transactional product summaries. It is a design prototype, not a complete migration of all routes.
+
+MagicPath project ID: 476588229383036928.
+Component ID: 476588232818171904.
+Revision ID: 476588232818171905.
+Generated name: freshly-lake-3141.
+The remote build completed and its native desktop preview was visually inspected. Do not claim its mobile runtime or all interactions were tested in MagicPath. The existing local frontend has separate automated mobile/desktop checks.
+
+## Brand and audience
+
+Brand: MANTRALO (มันตราโล). Keep the approved rainbow M logo and the original approved New Edition book cover. Main palette is purple with seven chakra colors as an exploration aid. The new design uses warm off-white surfaces, readable Thai typography, purple accents and generous spacing.
+
+Audience: people with little time, mental busyness, difficulty starting or maintaining a practice, and interest in self-understanding. Lead with practical reader benefits: pause briefly, notice feelings, learn one topic, and return when ready. Do not promise medical treatment, guaranteed chakra diagnoses, wealth, beauty changes, career outcomes or supernatural effects.
+
+Chakra quizzes and topic selectors are reflection/education experiences. A selected interest or example result is not a clinical assessment. Do not fabricate scoring validity or describe preview choices as real customer test outcomes.
+
+Business direction: sell available printed books and stocked accessories; expand primarily through digital books, educational materials and courses. Accessories are stock-dependent. An independent company E-library exists, but its final name, URL and access integration are not confirmed. Do not invent a portal URL or working single sign-on.
+
+## Current commerce facts
+
+### Printed book
+
+- Title: 7 วัน 7 จักระ New Edition; use the approved cover in assets/book-new-edition.webp.
+- Book price: THB 290.
+- Owner-selected shipping: THB 59 for standard areas in Thailand.
+- One-book set total: THB 349. Shipping of THB 49 / a total of THB 339 is superseded.
+- Special areas and international destinations require a quote before payment; do not imply global delivery for THB 59.
+- Includes the complete digital edition of the same title, not all eight digital books.
+- Free starter guide, checklist and seven-day journal are available to everyone; do not present them as exclusive buyer bonuses.
+- Course access is not included with the printed book.
+
+### Digital Starter and digital library
+
+- Digital Starter proposed price: THB 290. It includes the complete 7 วัน 7 จักระ digital book, without a printed book or shipping.
+- Eight single-book prices and bundle composition are defined by ebook-offers.js and library-data.js. These remain proposed offers.
+- Single-book IDs/prices: seven-days 290; lucky-by-design 190; unlock-love 190; office-chakra 190; inner-radiance 190; crystal-harmony 190; crystal-water 99; crystal-healing 149 (THB).
+- Four daily-life books: proposed THB 590.
+- All eight: proposed THB 1,090.
+- Remaining seven for someone who already has 7 วัน 7 จักระ: proposed THB 800.
+- Completing the four-book daily-life set to all eight: proposed THB 500, subject to verified existing purchase.
+- Prevent duplicate purchase recommendations where the same digital title is already included.
+- Cover previews and free/sample PDFs are in this repository. Full paid digital-book files are not delivered by the frontend.
+
+### Course and verified-credit upgrade
+
+- Course count: exactly 12 lessons, not 30.
+- Proposed full price: THB 2,900.
+- Maximum eligible credit: THB 290 once, after the original purchase and actual eligible amount are verified.
+- Full verified credit gives THB 2,610 additional payment.
+- Shipping, unrelated products, other digital books and previously used credit do not accumulate toward the credit limit. Buying multiple printed copies does not multiply the credit for one learner.
+- No checkbox, URL parameter, localStorage value or button click authorizes credit.
+- Owner-selected course access: 12 months from activation of course entitlement, not from the earlier book purchase date.
+- Full-price and eligible upgrade buyers receive the same duration. No automatic renewal or automatic recurring charge.
+- Course includes Digital Starter / the same complete 7 วัน 7 จักระ digital title. It does not automatically include the printed book, other seven digital books, equipment, live sessions or one-to-one support.
+- Exact videos, audio, per-lesson materials, total duration and opening date still require confirmation. The available public lesson sample is a two-page PDF, not a full video lesson.
+
+### The 12-lesson outline
+
+1. บทนำพลังงานจักระ
+2. จักระที่ 1
+3. จักระที่ 2
+4. จักระที่ 3
+5. จักระที่ 4
+6. จักระที่ 5
+7. จักระที่ 6
+8. จักระที่ 7
+9. ฝึกเข้าถึงและรับพลังงาน
+10. ฝึกควบคุมพลังงาน
+11. สมาธิจักระสี
+12. ภาษาสี และความหมายของภาษาสี
+
+Instructor name supplied in Thai: วรรณนภา ประจักษ์ทิพย์. An English spelling has not been approved. Do not invent credentials or an English name.
+
+## Delivery proposals versus approved terms
+
+Approved: THB 59 standard-domestic book shipping and 12 months of course access from activation.
+
+Still proposed: email access link within one business day after verified payment; printed-book dispatch in one to two business days; PDF personal-download format; account/library delivery arrangement. Transit duration depends on destination. Never invent shipment tracking, activation dates, expiration dates or delivery confirmations.
+
+The intended flow is verified order/payment → matching purchaser account → entitlement activation → email link → library/course. After-purchase controls and URLs are local examples only. No payment or entitlement service is connected.
+
+If PDF personal download is confirmed, a downloaded personal copy need not expire with the course. This does not grant redistribution rights. Real access links must verify the purchaser account and avoid exposing paid files through public static URLs.
+
+Existing support identity: LINE @emcthai. It is not an automatic outbound integration. Recovery copy explains spam checks, matching purchase email, expired-link recovery and ownership verification before email changes. The preview recovery button sends nothing.
+
+## Routes and source map
+
+The root frontend is buildless. Scripts in index.html load in a defined order; app.js performs hash routing.
+
+- `#/` — concept, short practice entry, topic exploration and product journey.
+- `#/start` — three-minute text-guided practice, timer and checklist.
+- `#/free-kit` — free guide, checklist and seven-day journal.
+- `#/lesson-sample` — actual two-page lesson document sample.
+- `#/book` — printed/digital selection, inclusions, shipping and verified-credit journey.
+- `#/course` — long sales page, 12-lesson outline, prices, credit and access terms.
+- `#/library` — digital books and curated knowledge videos.
+- `#/ebooks` — individual digital books and proposed bundles.
+- `#/result?chakra=2&outcome=unbalance` — example result presentation, not a verified diagnosis.
+- `#/discover`, `#/member`, `#/shop`, `#/next-step` — discovery/member/accessory/next-step prototypes.
+- `offer-options.html` — read-only owner-selected conditions; old comparison choices were removed.
+- `post-purchase.html?product=book&status=ready&view=receipt` — example receipt; products book/digital/course/upgrade, states pending/ready/expired, views receipt/email/library/classroom.
+- `followup-preview.html` — draft follow-up messages; no messages sent.
+
+Important files: app.js, styles.css, book-page.js, course-page.js, course-long-page.js, purchase-details.js, result-content.js, result-page.js, ebook-offers.js, library-data.js, video-library-data.js, free-kit-page.js, member-shop-page.js, post-purchase-data.js and post-purchase.js.
+
+English UI exists for home/book/course through locales/*.en.js and locales/i18n.js. Keys match exact Thai text; update matching keys when copy changes. The digital books, sample and course content remain Thai unless explicitly translated. Other routes clearly remain Thai; do not imply an English course is already available.
+
+## Existing services and integration boundary
+
+Existing sites: https://www.emcthai.com/ ; https://chakra.emcthai.com/7-chakras-testing ; https://unlockchakra.emcthai.com/course-dashboard ; https://emccourse.traffio.ai/me/website .
+
+The existing site has articles and ongoing quiz traffic reported by the owner. Keep this source of discovery when planning a rebrand; preserve relevant URLs/redirects only after a concrete SEO migration review. Do not invent analytics, search rankings or conversion rates.
+
+funnel/connection.js is a navigation boundary with validated configuration and inquiry-mode fallback. Configuration examples are not production connections. Do not install into Traffio, alter the original quiz, write contacts, send LINE/email messages, receive payment, create accounts or publish the site merely because source code is now on GitHub.
+
+## Email templates
+
+funnel/email-drafts contains pending and ready versions for book, digital, course and upgrade (8 emails in HTML/plain text). See manifest.json for subject lines.
+
+Fields: customer_name, order_number, library_access_url, course_access_url, access_starts_at, access_expires_at. These must be populated from verified server data, escaped correctly, and validated before sending. Pending templates contain no entitlement links. Ready templates are for successful payment verification and entitlement creation, with verified credit for upgrades.
+
+Compute one exact course expiry on the server from 12 calendar months after activation, using Asia/Bangkok and a defined month-end rule, and display the same date/time in email and the classroom. No fake dates in the prototype. Sender identity, domain authentication, email provider and replacement-link service remain unconfigured.
+
+## Validation and remaining work
+
+The existing frontend has local Playwright checks for routing, pricing, credit, i18n, free files, mobile overflow and after-purchase navigation. MANTRALO_PLAYWRIGHT should point to an installed Playwright package; Chrome is used by the checks. Existing scripts generally expect http://127.0.0.1:8140/.
+
+Recent checks: 21 bilingual checks, 25 after-purchase checks, 12 purchase-terms checks and broader route checks were run during development. Subsequent shipping change received focused TH/EN totals, order dialog, receipt, email-template parity, upgrade and mobile checks. These are development evidence, not a production certification.
+
+Before launch: integrate the new visual design across remaining routes, verify actual deliverables, implement payment reconciliation and entitlement checks, configure email/library/course delivery, test dates and recovery, confirm fulfilment service levels and refund/privacy terms, and test real end-to-end purchase flows in a sandbox. Confirm all outbound links and sample files. No customer contact export or full paid library is part of this frontend handoff.
+
+GitHub source upload is authorized by the owner. Production deployment, GitHub Pages, live Traffio changes and outbound messages remain unrequested. Do not turn source upload into automatic website publication.

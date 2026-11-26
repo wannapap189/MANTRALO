@@ -1,0 +1,921 @@
+{
+  "updated": "2026-11-26",
+  "note": "SHA256 of working content with LF text and resolved LFS media, excluding this manifest",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 61,
+      "sha256": "e15c122a600152774ec8ce9abbcdcf2555e52598134628a5ae9f0c61b85131d0"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 200,
+      "sha256": "a15e12357358f007af1caa1e900c9fbe7d0093c3c9aec6fdd81d00b59c6ca90a"
+    },
+    {
+      "path": "app.css",
+      "bytes": 25215,
+      "sha256": "70389372c5b1ab8cc1321fcf92e1594e55b2257144779d04d9075406fef047cb"
+    },
+    {
+      "path": "app.js",
+      "bytes": 51617,
+      "sha256": "1fd8169e5a57635707838342205148dd1b2b89ca9216b4258cd5e2704fac24a7"
+    },
+    {
+      "path": "assets/accessories/chakra-basics.webp",
+      "bytes": 35382,
+      "sha256": "cc3c3a8c286e0f7ef8089a7bf25b0c07cbdebb425c223e0b50d32dd62195d750"
+    },
+    {
+      "path": "assets/accessories/rose-notebook.webp",
+      "bytes": 132402,
+      "sha256": "c87ba2953374b053aa455de8641edbd2bf9ab133284adbb29cea300a0a16adf2"
+    },
+    {
+      "path": "assets/accessories/seven-notebook.webp",
+      "bytes": 56638,
+      "sha256": "b199db73279474e91bc867009b412218a091568d721e0e8bcf47905f2981049d"
+    },
+    {
+      "path": "assets/accessories/seven-pendant.webp",
+      "bytes": 90110,
+      "sha256": "b628ef44597194c8c6fc323b985df5fafdf9b136268d1a0938b2aff843b268fe"
+    },
+    {
+      "path": "assets/book-cover.png",
+      "bytes": 568941,
+      "sha256": "2482547e4bb8b480b7aff2576c80118ea0f34f610b3c5acf7632bf8238a618a9"
+    },
+    {
+      "path": "assets/book-new-edition.png",
+      "bytes": 568941,
+      "sha256": "2482547e4bb8b480b7aff2576c80118ea0f34f610b3c5acf7632bf8238a618a9"
+    },
+    {
+      "path": "assets/book-new-edition.webp",
+      "bytes": 65464,
+      "sha256": "ac6b1e1beed6b295c7d9c1d9681fd150ccb3410da20906fa3db88520dfa4f37b"
+    },
+    {
+      "path": "assets/checklist-draft.pdf",
+      "bytes": 46481,
+      "sha256": "2cd9aa9df7d9d0a4805ce0528ef8b30b937048fcb0b787d59706b931b6208bc5"
+    },
+    {
+      "path": "assets/ebooks/chakra-mastery.png",
+      "bytes": 312391,
+      "sha256": "42b5d29ed3dd5be0d68807c86e8eeb2808a67f5bfad2d589c4a1e5ed5840f437"
+    },
+    {
+      "path": "assets/ebooks/crystal-harmony.png",
+      "bytes": 235980,
+      "sha256": "5a63960c70a99ddf316ca888bb96730ee2cf416d7d99174beed6fbd86f69abf3"
+    },
+    {
+      "path": "assets/ebooks/crystal-healing.png",
+      "bytes": 457476,
+      "sha256": "2371d9ae772376847ae545812a4d99763c1d804161fe72d51a262a0c4696ca66"
+    },
+    {
+      "path": "assets/ebooks/crystal-water.png",
+      "bytes": 641586,
+      "sha256": "be88e68398ee640a2a072d0b8b877408468b08aaba69ebbf62d7b7999c437695"
+    },
+    {
+      "path": "assets/ebooks/deep-sleep.png",
+      "bytes": 66098,
+      "sha256": "0dccc91784cb26c128c92b61bb462f931f62cc07380cbb03643c679a79a0d824"
+    },
+    {
+      "path": "assets/ebooks/inner-radiance.png",
+      "bytes": 553161,
+      "sha256": "79f0a15ca6ed750ead36cf00ad19a0f659b37611b080c5524f3bca79ee77db48"
+    },
+    {
+      "path": "assets/ebooks/lucky-by-design.png",
+      "bytes": 462923,
+      "sha256": "ef93e91340a251d3d8ae43874068ebfca07be9af6048d9309316c4f42c23c3cd"
+    },
+    {
+      "path": "assets/ebooks/office-chakra.png",
+      "bytes": 33724,
+      "sha256": "45b7d22032a7d632e503ead5238d82e6e3be635c994d4d4cc562268be03de935"
+    },
+    {
+      "path": "assets/ebooks/unlock-love.png",
+      "bytes": 232422,
+      "sha256": "863242502ac328337e385ff773f15f7e13db686ed37ad8f049c769a22c84f289"
+    },
+    {
+      "path": "assets/ebooks/weight-from-within.png",
+      "bytes": 851672,
+      "sha256": "934dd8d0812ccc571290b63fee3f5840776a2eefd1018cd36c4a522d1e3510da"
+    },
+    {
+      "path": "assets/font-1.ttf",
+      "bytes": 96200,
+      "sha256": "ed335894f8d954263675f7e457bf657374d8b7be629be4dc43aef97c309ad3ae"
+    },
+    {
+      "path": "assets/font-2.ttf",
+      "bytes": 96300,
+      "sha256": "437dc9f921739a6893128fa4dfc299424951148475815a9a213a46457878c42b"
+    },
+    {
+      "path": "assets/font-3.ttf",
+      "bytes": 96348,
+      "sha256": "68ed4be49ec7d32f07b42f9232dc01ca1df7a77be1d9b0731aac74db58235f34"
+    },
+    {
+      "path": "assets/font-4.ttf",
+      "bytes": 96188,
+      "sha256": "ea1f264039fed13fd36e6d6f49fcae4fe7007def02cf2972b5c7f6d6f1349d06"
+    },
+    {
+      "path": "assets/font-5.ttf",
+      "bytes": 96816,
+      "sha256": "a8291b05b2732801abdbbb6d06866c57431c3b990638462423e692151b5e0895"
+    },
+    {
+      "path": "assets/font-6.ttf",
+      "bytes": 45660,
+      "sha256": "6c5e4ca047263ed8f07b174be2f7c396d245504ce0f77adc1d26b0978bc95426"
+    },
+    {
+      "path": "assets/font-7.ttf",
+      "bytes": 45744,
+      "sha256": "9bbdcab3b91acaa0544db897087ec92d4e2df1ccabd52d9c3f9b8bceaa9286c5"
+    },
+    {
+      "path": "assets/font-8.ttf",
+      "bytes": 45756,
+      "sha256": "2eb1ef5273942ee86b6547202950b3a96f8f1cb44c059616486458a203aff404"
+    },
+    {
+      "path": "assets/font-9.ttf",
+      "bytes": 45664,
+      "sha256": "fd475b89dca5b9b2ad5f294944c6c82a1641c29b0a30bc1b771227250fb826a8"
+    },
+    {
+      "path": "assets/fonts.css",
+      "bytes": 1474,
+      "sha256": "9d60c328ec91919fc6dfc51719f9682ce23c43a2008c5ed3ef3a35e07b597b96"
+    },
+    {
+      "path": "assets/free-guide-draft.pdf",
+      "bytes": 65809,
+      "sha256": "476032b8a3561c863cec406c49ff6b08ddfe5fd38ed884e91dd8383ac01a1372"
+    },
+    {
+      "path": "assets/free-kit/checklist.pdf",
+      "bytes": 564119,
+      "sha256": "aa92d091a21ace5db260ec2e6f718d1acd71fd2192b050593d15b3be91e6ee08"
+    },
+    {
+      "path": "assets/free-kit/checklist.png",
+      "bytes": 133369,
+      "sha256": "48708073ea8b1423645b2066d7acc962b7f737fcce30d90c5795f8b21a47aff0"
+    },
+    {
+      "path": "assets/free-kit/course-sample-page-1.png",
+      "bytes": 1060743,
+      "sha256": "0067d79ccde50efdd347d9e2f224584f5e6bb1f87b77df56b5a2ab7b411959fd"
+    },
+    {
+      "path": "assets/free-kit/course-sample-page-2.png",
+      "bytes": 95338,
+      "sha256": "39b368b42e8f1fe790e6fad1621ca3f7bdcc8649fd5852842cad94195df1563f"
+    },
+    {
+      "path": "assets/free-kit/course-sample.pdf",
+      "bytes": 239521,
+      "sha256": "25b3e2c2cd8904e29ad29276fa4e7561385510a758b2ec42b89fdefe2a38f643"
+    },
+    {
+      "path": "assets/free-kit/free-guide.pdf",
+      "bytes": 616435,
+      "sha256": "57f0c8a66621fc7472d27bb44c1ddc181f7c0b106e9f7ece48560c7910f4eec2"
+    },
+    {
+      "path": "assets/free-kit/free-guide.png",
+      "bytes": 140725,
+      "sha256": "5a0d78e1a1cec729198455476bc136b2a85073c27e21a0d21ea182aa05771660"
+    },
+    {
+      "path": "assets/free-kit/journal.pdf",
+      "bytes": 598649,
+      "sha256": "1446aafc159d06931b6b821a7ff1b481bd89a1673e80bd4a4b7aee90a7ed5675"
+    },
+    {
+      "path": "assets/free-kit/journal.png",
+      "bytes": 100931,
+      "sha256": "7b298e078de5f70adee068a9cb312aa0bc2507be614994e83d916136a8553706"
+    },
+    {
+      "path": "assets/instructor-wannapa.png",
+      "bytes": 521489,
+      "sha256": "668d333d251770eb222b9cf20bf64e4662d21d7cded0ac1595d3dd8416541e45"
+    },
+    {
+      "path": "assets/instructor-wannapa.webp",
+      "bytes": 46894,
+      "sha256": "0488e87e408447b0186237fe415752adf1c36f9964baeb8de0ffb52180b5d3e1"
+    },
+    {
+      "path": "assets/journal-draft.pdf",
+      "bytes": 47736,
+      "sha256": "d8585e41e4dffc597fb6a624e038165553abdf9f1d428123dd0288c3430304e8"
+    },
+    {
+      "path": "assets/LICENSE-Manrope.txt",
+      "bytes": 4386,
+      "sha256": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac"
+    },
+    {
+      "path": "assets/LICENSE-NotoSansThai.txt",
+      "bytes": 4379,
+      "sha256": "96ac951c8caddd87d8a66fe0d02342127696131d3e935ce4a936dc68cf032e33"
+    },
+    {
+      "path": "assets/logo-small.webp",
+      "bytes": 23640,
+      "sha256": "44f98311c3404de1bb875f72ee84a2b0950117313f6b38071237f2eecfab21e1"
+    },
+    {
+      "path": "assets/logo.png",
+      "bytes": 1245895,
+      "sha256": "a178a8378e75113203a0d2f1b3db1e6992ad65004131c630780100dd28283c53"
+    },
+    {
+      "path": "assets/logo.webp",
+      "bytes": 119380,
+      "sha256": "b85ab5f302f5758adca7846d0abbf67dd99ea874a94fd616bf860f3e680e59f4"
+    },
+    {
+      "path": "assets/videos/emc-quiz-introduction-poster.png",
+      "bytes": 232580,
+      "sha256": "65677624869e4891d264de533591c4a20cc41fb4b5ed8cf7302275538a732c91"
+    },
+    {
+      "path": "assets/videos/emc-quiz-introduction.mp4",
+      "bytes": 7731051,
+      "sha256": "30712b20386e96188fbb64f358a5426b67159bfe7dc60c3ef55f2449f87f5a7b"
+    },
+    {
+      "path": "assets/videos/library/breathing-introduction.jpg",
+      "bytes": 189576,
+      "sha256": "a79d44c449bbb4fb90c5af422df8d04002797d7611e89428db954909cb752d26"
+    },
+    {
+      "path": "assets/videos/library/breathing-introduction.mp4",
+      "bytes": 44581023,
+      "sha256": "1dcae70d3c2d43dcca36c19f1457d36d28033094569fb9916baf6558624ba8fc"
+    },
+    {
+      "path": "assets/videos/library/chakra-colours.jpg",
+      "bytes": 206403,
+      "sha256": "377b0b7ee7413bcc6e892ff5921a1953b96f6deed76bf0b0a644ab1d2356e3c0"
+    },
+    {
+      "path": "assets/videos/library/chakra-colours.mp4",
+      "bytes": 98546339,
+      "sha256": "6d1deabf0a486d81c72b459702ed7ae477fb71577e247b398e51d494f12d548c"
+    },
+    {
+      "path": "assets/videos/library/little-daily-routine.jpg",
+      "bytes": 243867,
+      "sha256": "8ae21d86d30dc0bafac807ba4946820773e1e9b01e7d9b99ffe8b92f98d9fc6e"
+    },
+    {
+      "path": "assets/videos/library/little-daily-routine.mp4",
+      "bytes": 63914931,
+      "sha256": "52f4a651173d7617aa8d74d6b622af7bf4d52e0865965147fb6cfd0e9c7f1fec"
+    },
+    {
+      "path": "assets/videos/library/meditation-routine.jpg",
+      "bytes": 242962,
+      "sha256": "72b9c68e51956f89117010fed5aab08a7f1653b92672fcf20919f25d0ca0b948"
+    },
+    {
+      "path": "assets/videos/library/meditation-routine.mp4",
+      "bytes": 54048253,
+      "sha256": "896fe43e91652a2db5a2b2834159acaa28be3de98ca5d5a4320a6edc15207390"
+    },
+    {
+      "path": "book-page.js",
+      "bytes": 31549,
+      "sha256": "e892f519ddba7a8d8bcd27708b6001de9e3e8fda7b181440f878df78b172d435"
+    },
+    {
+      "path": "book-sales.css",
+      "bytes": 24550,
+      "sha256": "8f5e79cedd1935c26ab4a9e836bfdc656b06eafabc05d2ad48c39f8a8fc0a855"
+    },
+    {
+      "path": "course-long-page.js",
+      "bytes": 49326,
+      "sha256": "866e1a99d73021e8f103f3ba92e6055c5a8e22730c53d83810529577d4153c95"
+    },
+    {
+      "path": "course-long.css",
+      "bytes": 43504,
+      "sha256": "492ff2e620a900cb1e4f07b6b37aa11acc4b35b89909fe6777e1b618f77865a6"
+    },
+    {
+      "path": "course-page.js",
+      "bytes": 6274,
+      "sha256": "7f0854a9686e5e6b97fdeaa879f98adabace0966937e21b3945a9b8a7591f230"
+    },
+    {
+      "path": "course-sales.css",
+      "bytes": 23723,
+      "sha256": "286a9d5576b17021ece933ae22c36a9a194b206698f5e15bfbaef5815050842f"
+    },
+    {
+      "path": "course-sample-data.js",
+      "bytes": 3635,
+      "sha256": "ffcf1785dc0411aece1693f35a2c5f4e41912f04ddb8db0d61515a827724935d"
+    },
+    {
+      "path": "customer-copy.css",
+      "bytes": 5034,
+      "sha256": "d31febb2aa8193ac014bec654542092e1a95a19e8a3d51a45eca992a7bba105d"
+    },
+    {
+      "path": "design/magicpath/assets/book-new-edition.webp",
+      "bytes": 65464,
+      "sha256": "ac6b1e1beed6b295c7d9c1d9681fd150ccb3410da20906fa3db88520dfa4f37b"
+    },
+    {
+      "path": "design/magicpath/assets/instructor-wannapa.webp",
+      "bytes": 46894,
+      "sha256": "0488e87e408447b0186237fe415752adf1c36f9964baeb8de0ffb52180b5d3e1"
+    },
+    {
+      "path": "design/magicpath/assets/logo-small.webp",
+      "bytes": 23640,
+      "sha256": "44f98311c3404de1bb875f72ee84a2b0950117313f6b38071237f2eecfab21e1"
+    },
+    {
+      "path": "design/magicpath/DESIGN-STATUS.json",
+      "bytes": 1016,
+      "sha256": "a94f4ef30607222c400722f3f8d64b7e56d6417b7413a4b6756ae1110d14d259"
+    },
+    {
+      "path": "design/magicpath/README.md",
+      "bytes": 1968,
+      "sha256": "eba18b2b0684b59736f20091546cb7c31d72b2c743141ea93d8b8d80c0c1a447"
+    },
+    {
+      "path": "design/magicpath/src/components/generated/MANTRALODailyPause.css",
+      "bytes": 15974,
+      "sha256": "bc474446333443d379828400aaa0a2f3becd7f9f9f6f2c88293b1715c03567d4"
+    },
+    {
+      "path": "design/magicpath/src/components/generated/MANTRALODailyPause.tsx",
+      "bytes": 27152,
+      "sha256": "41377813e4c97520cba014a1f2e6ae7fb8262d0f17f418964473d699befa899a"
+    },
+    {
+      "path": "docs/DELIVERY-STATUS.md",
+      "bytes": 2587,
+      "sha256": "3a573d0b9fe708730ca8b4126ba6fe8154479b6ef3a16fd6ae09eae8df9162b0"
+    },
+    {
+      "path": "ebook-offers.js",
+      "bytes": 9429,
+      "sha256": "3670bac237756d61422f44d28ddb8853dd5e7f9ea63c1533f0b491c687d286d7"
+    },
+    {
+      "path": "ebook-sales-page.js",
+      "bytes": 19908,
+      "sha256": "5166371a271874d4802464abb3a812a4faec8337ab7244292b922c86b895e569"
+    },
+    {
+      "path": "ebook-sales.css",
+      "bytes": 21782,
+      "sha256": "f1e453b3ffe27489c34542c708dd1abac9cb5aace7300e923e8a8c6278fc0f2c"
+    },
+    {
+      "path": "followup-preview.css",
+      "bytes": 3870,
+      "sha256": "445b856930d62ca6886e3e6d26099b4828f018d58b9f00ca7241bdce09e79acb"
+    },
+    {
+      "path": "followup-preview.html",
+      "bytes": 6321,
+      "sha256": "daa79b1e5dad4814c11fd1c8043f0c6085485af4cd594afb08e9996b685368fb"
+    },
+    {
+      "path": "followup-preview.js",
+      "bytes": 4520,
+      "sha256": "200d64cbe3a8ec1e974076948f10434db53f2be423a4fa2da550d7981c838222"
+    },
+    {
+      "path": "free-kit-messages.js",
+      "bytes": 63350,
+      "sha256": "b3236fc18b2336888e77f07e6a5e59db4acf4dd7b74128fd4a98f0dc48f85f46"
+    },
+    {
+      "path": "free-kit-page.js",
+      "bytes": 26471,
+      "sha256": "84256b0f34932ff77cf08a4306c3f2083381ae7382d3f6796c1fc9f36584d82f"
+    },
+    {
+      "path": "free-kit.css",
+      "bytes": 10398,
+      "sha256": "d48c6197bff7f168fae74a88f96ee4927538d51602887a681298447afd93fbd1"
+    },
+    {
+      "path": "funnel/approved-terms.json",
+      "bytes": 816,
+      "sha256": "7f3e6a3fa8c76ee9d430b60e49afefadda0708d388305c4a60d4af89c5c88eb1"
+    },
+    {
+      "path": "funnel/build-package.mjs",
+      "bytes": 6706,
+      "sha256": "cedddefa2226746934a013c1eedd0015c4fd52afa9b90c568419cbadcf27cce6"
+    },
+    {
+      "path": "funnel/COMMERCE-HANDOFF.txt",
+      "bytes": 16399,
+      "sha256": "5a6112ac518d82f076be86d84016641be4398b8bbd175a46da6af9677b1a80f2"
+    },
+    {
+      "path": "funnel/connection-config.example.js",
+      "bytes": 467,
+      "sha256": "d62561a457424197180f8843de3639850b4264e73f7050b13d5a3f56a1abeef6"
+    },
+    {
+      "path": "funnel/connection-map.json",
+      "bytes": 3566,
+      "sha256": "04dc45aac1b35fba0cfe6560eba4f2b7b7863290421d2c41c1fe7ba887027c69"
+    },
+    {
+      "path": "funnel/connection.js",
+      "bytes": 4975,
+      "sha256": "4a2d7db76c0fe7a613bd9783af6cc74872209dbbaccdfab2b90a5e3b4d262b46"
+    },
+    {
+      "path": "funnel/EBOOK-OFFERS-NOTES.txt",
+      "bytes": 2536,
+      "sha256": "e2593adfe29b546e9258822a44bef6a287404d6bf5ce6c3a646529540b30038e"
+    },
+    {
+      "path": "funnel/ebook-products.example.json",
+      "bytes": 5684,
+      "sha256": "d7d1f0d73846ad66ae9434638318555f6aeb20084e26d37971f088657959e653"
+    },
+    {
+      "path": "funnel/email-drafts/book-pending.html",
+      "bytes": 3456,
+      "sha256": "c45198f270a9b4c6a3a869fcf4efdcc5764815ff16f4627d478d679f7c01b441"
+    },
+    {
+      "path": "funnel/email-drafts/book-pending.txt",
+      "bytes": 2197,
+      "sha256": "07024277dec390669db175f02a7fcd1d9443977bcbbafe3f0696a4f526c860ea"
+    },
+    {
+      "path": "funnel/email-drafts/book-ready.html",
+      "bytes": 4178,
+      "sha256": "2640e11b92161d2c479c4be01ac2fda3cee9da8e1799ab798e91aa4b60964742"
+    },
+    {
+      "path": "funnel/email-drafts/book-ready.txt",
+      "bytes": 2653,
+      "sha256": "8b5b6276c94d2b4791b37569e78545a9f5f3abcddb1510d991820f64d5765a3c"
+    },
+    {
+      "path": "funnel/email-drafts/course-pending.html",
+      "bytes": 2848,
+      "sha256": "d83c6e4f652cc01f7d708c7df58ad114d5126a33cc8a6e1b574f229e8d4f1a21"
+    },
+    {
+      "path": "funnel/email-drafts/course-pending.txt",
+      "bytes": 1649,
+      "sha256": "a123a729c61d8fabf5c4d1a152dc03192827b7fa36c64acac398d0898efd155f"
+    },
+    {
+      "path": "funnel/email-drafts/course-ready.html",
+      "bytes": 4254,
+      "sha256": "a51e65830b1c2add1217b0465fd4ab4e3b999537724de9fa82c90c1597b6abe8"
+    },
+    {
+      "path": "funnel/email-drafts/course-ready.txt",
+      "bytes": 2550,
+      "sha256": "2334699ac653319ce46f1825eb40f35e099c6d296a23419752c947e22d74a4c2"
+    },
+    {
+      "path": "funnel/email-drafts/digital-pending.html",
+      "bytes": 2873,
+      "sha256": "303987d4c20962b798d3a373b9b093ec9e4fbaf813775c9318263add03019765"
+    },
+    {
+      "path": "funnel/email-drafts/digital-pending.txt",
+      "bytes": 1674,
+      "sha256": "954212ae46bdf2c78a08ef103c4c2d34b2692b44a77968220b387e205013d92e"
+    },
+    {
+      "path": "funnel/email-drafts/digital-ready.html",
+      "bytes": 3595,
+      "sha256": "5502ca6826414418345beb7d7fa6919e7c969b38a4e372ba366290070c293d56"
+    },
+    {
+      "path": "funnel/email-drafts/digital-ready.txt",
+      "bytes": 2130,
+      "sha256": "e9ce20bc2285580f11740014db7776aeccca3db43821d5b2accec9d2b36f328d"
+    },
+    {
+      "path": "funnel/email-drafts/manifest.json",
+      "bytes": 2316,
+      "sha256": "1a65f112613143ddf28fe60b3ac965caf1f92da7390c73d363c5b78fe74d4c97"
+    },
+    {
+      "path": "funnel/email-drafts/README.txt",
+      "bytes": 2152,
+      "sha256": "db7c8a463f6378957c7ec9014e5cbb78c13b2eb6c2e9d269e8f384de501180ec"
+    },
+    {
+      "path": "funnel/email-drafts/upgrade-pending.html",
+      "bytes": 3260,
+      "sha256": "a8fb7e7c1681a63225e71aedbe7a4e27f62274652d52347d920dbf162209ea42"
+    },
+    {
+      "path": "funnel/email-drafts/upgrade-pending.txt",
+      "bytes": 2001,
+      "sha256": "3b5a97bb4bf72bdc7ec2a02104aecaa751b4afaad2a180bd095138c7fe3ba4cd"
+    },
+    {
+      "path": "funnel/email-drafts/upgrade-ready.html",
+      "bytes": 4666,
+      "sha256": "10744f4e1345c6bb6d0ad08b332faaed3e7029b0d31f5b65a2c106c539c2b969"
+    },
+    {
+      "path": "funnel/email-drafts/upgrade-ready.txt",
+      "bytes": 2902,
+      "sha256": "2d85b8f4009b61a98e930663b4c3b0103798083be8895b3c70b43e624c6d2159"
+    },
+    {
+      "path": "funnel/export-traffio.mjs",
+      "bytes": 3551,
+      "sha256": "cbd6148400e05f6720170793711276b1780ca8ff64c1e27588e812ad98811028"
+    },
+    {
+      "path": "funnel/INTEGRATION.txt",
+      "bytes": 18523,
+      "sha256": "9278bd95017c51b10dc62588596b2c60f6de3a48fb91bfab8b6fa41ed9fde7e1"
+    },
+    {
+      "path": "funnel/package-utils.mjs",
+      "bytes": 5691,
+      "sha256": "309d7d7fc18ceace50d05c64e3a52e2ee18d16060704f8cc05e5b794eb632cde"
+    },
+    {
+      "path": "funnel/preview/result-chakra1-balance.html",
+      "bytes": 19228,
+      "sha256": "621e1ccdd2c0f48e54df1cc4ba7f5acf974fdf3247d3899bbd26b5668da9f3eb"
+    },
+    {
+      "path": "funnel/preview/result-chakra1-unbalance.html",
+      "bytes": 19226,
+      "sha256": "2151619fb4cd12044137d16d6abc53ca796f38b105585836fba44b00aa7e810a"
+    },
+    {
+      "path": "funnel/preview/result-chakra2-balance.html",
+      "bytes": 19747,
+      "sha256": "10509d79fdb4e12524aa7692f4184ed55136e058f85875e59caf78278c40bf58"
+    },
+    {
+      "path": "funnel/preview/result-chakra2-unbalance.html",
+      "bytes": 19833,
+      "sha256": "5caa4f38ede16bdd97f29cb7c5fe8ed987b273b14a9dbf75bbac63f94fe8d031"
+    },
+    {
+      "path": "funnel/preview/result-chakra3-balance.html",
+      "bytes": 19280,
+      "sha256": "a906676eb495b3c2ba3039de77d8745fe3164f987dfa52c532b870dfcbee213c"
+    },
+    {
+      "path": "funnel/preview/result-chakra3-unbalance.html",
+      "bytes": 19426,
+      "sha256": "5b9765c1a358a541f7cd6d107cd5f106ccacd217ea7d329598a4a9700c54ed04"
+    },
+    {
+      "path": "funnel/preview/result-chakra4-balance.html",
+      "bytes": 19298,
+      "sha256": "0bc01db79e4dab737ca2c60d0dcd99a4dad0f5eac6c5bd8c51cdbe25be631d6c"
+    },
+    {
+      "path": "funnel/preview/result-chakra4-unbalance.html",
+      "bytes": 19341,
+      "sha256": "ff01b08cddc98f83398989cc395a9cae00e41f257259a3921b1e52ff65d03009"
+    },
+    {
+      "path": "funnel/preview/result-chakra5-balance.html",
+      "bytes": 19269,
+      "sha256": "ae4caed487b24d1c303c884bbb6e40bc5f1049ea236346b9875312395450f2f0"
+    },
+    {
+      "path": "funnel/preview/result-chakra5-unbalance.html",
+      "bytes": 19293,
+      "sha256": "788efe4f556fe0da449dfba6610f29bae08af9ce8de39e2c68f863513fa77acb"
+    },
+    {
+      "path": "funnel/preview/result-chakra6-balance.html",
+      "bytes": 19495,
+      "sha256": "92c53162f38a8ed68736a9e4c4bcceb23ba8b507ca5274c28b9abf971e4b3337"
+    },
+    {
+      "path": "funnel/preview/result-chakra6-unbalance.html",
+      "bytes": 19570,
+      "sha256": "fd1b0cd337a10f1e54d6eb70c02c9afb26a7e94a79d4cdf26521dd998e7293a2"
+    },
+    {
+      "path": "funnel/preview/result-chakra7-balance.html",
+      "bytes": 19397,
+      "sha256": "e9fb00b327de71f0376c582fd5fcaab4888cfb10d4fabdb1b182c87f531f1a02"
+    },
+    {
+      "path": "funnel/preview/result-chakra7-unbalance.html",
+      "bytes": 19402,
+      "sha256": "c5b741fb068a62dd9e3fb39cf15959fec180cf6a6b301db36fa75a53bc3e7946"
+    },
+    {
+      "path": "funnel/production-config.example.json",
+      "bytes": 178,
+      "sha256": "8ea967255bc9a680fa9f226fd1dce7119c9cf2e8e5fd0ce7d207836da1e9a88c"
+    },
+    {
+      "path": "funnel/review-index.html",
+      "bytes": 6631,
+      "sha256": "3815137339f7064983823bd4d09d52f980af01110c8ceef86d074c88d1b06ea6"
+    },
+    {
+      "path": "funnel/route-map.json",
+      "bytes": 10047,
+      "sha256": "620d251035363a8c3f457686221b4e783dc3ec657ef765de2ae40cd69a3a3bad"
+    },
+    {
+      "path": "funnel-plan.html",
+      "bytes": 78731,
+      "sha256": "6c0d6deae4a8036716011f35d4fbbe5d201f7afec610c8fa2b213a9877dc91b1"
+    },
+    {
+      "path": "home-library.css",
+      "bytes": 3101,
+      "sha256": "e71ae21595a2d50d2c9f227d4bf4121213bdaff97db2b6d7e593147f7f00a2b8"
+    },
+    {
+      "path": "index.html",
+      "bytes": 40676,
+      "sha256": "cccac5caa399051ffc87293b4b86f69e392f04c649930949a6b2124ee3d7a04a"
+    },
+    {
+      "path": "lead-page.css",
+      "bytes": 21950,
+      "sha256": "82df42edeb69294f9f1455048f9d1ab2003f22d2cff10e6be98f54cf9bc57604"
+    },
+    {
+      "path": "lead-page.js",
+      "bytes": 22059,
+      "sha256": "ebf8e2e7f6a464e238bd89b494999865f9c674e8c95e84713bcb889b8152dc1f"
+    },
+    {
+      "path": "library-data.js",
+      "bytes": 18095,
+      "sha256": "71d1dc5b1098a6948c79a7793dc7d2f3b2d10d00e011682e4af9d6946fbdcbfd"
+    },
+    {
+      "path": "library-page.css",
+      "bytes": 16904,
+      "sha256": "780d1556ad848a902a9a9b4d65fbec4e94ceee918d092612d90c08a17bb3ddba"
+    },
+    {
+      "path": "library-page.js",
+      "bytes": 16880,
+      "sha256": "d959eb13ca09b3c6c64cfe9823b7a0c03744c77122379b093a602d6580801b2c"
+    },
+    {
+      "path": "LLMS.txt",
+      "bytes": 13936,
+      "sha256": "29e2b7be14537fabad204947b1d8b7ce8c28e6ae4d0ea164099ecac4b9504e9e"
+    },
+    {
+      "path": "locales/book.en.js",
+      "bytes": 42236,
+      "sha256": "ae5e5b38f8fcac044ee74e019c4ec77b811e7a02d945d61135ab05819700fa73"
+    },
+    {
+      "path": "locales/common.en.js",
+      "bytes": 25029,
+      "sha256": "60c55f5dc57fb29dea3a700dc900401729df6f855865e4d5ce5884f71a2031e1"
+    },
+    {
+      "path": "locales/course.en.js",
+      "bytes": 64523,
+      "sha256": "2a535961f1cb969ca460def0f3879f478847e504018f5c6252e54a82c2898b52"
+    },
+    {
+      "path": "locales/english.css",
+      "bytes": 3484,
+      "sha256": "214b96f070c49a8b45c39fdee14bc3e44f83ce6e48d03c1fc88bc5e74b3536ea"
+    },
+    {
+      "path": "locales/home.en.js",
+      "bytes": 30852,
+      "sha256": "c2c32ce46d1204722dcd7815c1b3514fcace3c605362d61086acec10c8f20ca1"
+    },
+    {
+      "path": "locales/i18n.js",
+      "bytes": 11021,
+      "sha256": "a8bb0e17c8dfab19132c64e89c8586a82a752c05c3939cd2a4e1da3c08bd0a16"
+    },
+    {
+      "path": "market-research.html",
+      "bytes": 65267,
+      "sha256": "d18d34131f0fe7d7719d0432d1f07f616906abd2e6bf383d6be70abb82d108b9"
+    },
+    {
+      "path": "member-shop-page.js",
+      "bytes": 29304,
+      "sha256": "8ad223e2141cc8eff8176e93922bc1fdd407f1868de821b0093d3e3440db2033"
+    },
+    {
+      "path": "member-shop.css",
+      "bytes": 17022,
+      "sha256": "9eb864aa82e815e7aacdc1fd652944c623172b3e0bf981d5551f7606be223b39"
+    },
+    {
+      "path": "offer-options.css",
+      "bytes": 2985,
+      "sha256": "081f87d14cd0999674597bba705f6172286591a22868dbb13aff5d43404c9d58"
+    },
+    {
+      "path": "offer-options.html",
+      "bytes": 6213,
+      "sha256": "eb9c55d7a7d9eebf00fda13e90cbc7e2d5e2fa2dfc49320c1177ce90a7db87ba"
+    },
+    {
+      "path": "offer-options.js",
+      "bytes": 108,
+      "sha256": "e8df59a58d4c62220515a5b23e2e721b2e11b9619e6dc78bd620a2543889d2f2"
+    },
+    {
+      "path": "package.json",
+      "bytes": 214,
+      "sha256": "3d43a03188b9e03c126a211f3f075363a7db052df7f505d1d87133f2acf667f6"
+    },
+    {
+      "path": "post-purchase-data.js",
+      "bytes": 8639,
+      "sha256": "9abd0b95fe3293559114d97927b342af6f599d19acc140ac899a460edee40555"
+    },
+    {
+      "path": "post-purchase.css",
+      "bytes": 5182,
+      "sha256": "110aae6dc8ed984ad936803c4b984786698d8805b76f82ea68e321913efdfecb"
+    },
+    {
+      "path": "post-purchase.html",
+      "bytes": 2783,
+      "sha256": "ab8a0e6a656d0c86e020157d806a6efea56abd821ef1af45fb2c88125d35123d"
+    },
+    {
+      "path": "post-purchase.js",
+      "bytes": 19118,
+      "sha256": "69bb890df1e7ce9def129ef815ce63a00bced5f26742819688f4b42f25f11760"
+    },
+    {
+      "path": "preview-tour.css",
+      "bytes": 8748,
+      "sha256": "2d40bb3825c78c337cec8cf567ee85c1c3fca223dd8393f832aa7180b356888f"
+    },
+    {
+      "path": "preview-tour.html",
+      "bytes": 16086,
+      "sha256": "2b5551fbb5df37e1e5210f868ee60ed4ca39e7ea9bfe37a9fd9de0b0d76b4dac"
+    },
+    {
+      "path": "purchase-details.css",
+      "bytes": 2587,
+      "sha256": "90b6f12728865a3154150fd649a0e0e4aa452dcc876b6709bc586e3fff487db5"
+    },
+    {
+      "path": "purchase-details.js",
+      "bytes": 14958,
+      "sha256": "96356ebca5eb885de4fda4c130738f49c9b32feeda05239bd0edd1b55862c910"
+    },
+    {
+      "path": "qa/browser-check.cjs",
+      "bytes": 11156,
+      "sha256": "4325ed2c347ef87e27dd04bd20e2e3aa7ec62a2e10c53c19a17882ec9e442c0c"
+    },
+    {
+      "path": "qa/course-long-check.cjs",
+      "bytes": 21369,
+      "sha256": "274e05713721ccd913d5127221bd6df5b48f28a193a62b14f592a5662f5e7e41"
+    },
+    {
+      "path": "qa/ebook-sales-check.cjs",
+      "bytes": 20449,
+      "sha256": "98427fbf685f629bdde80cdd82770ee132aa244aa84c0520fdbcf1d5c5381c0d"
+    },
+    {
+      "path": "qa/free-kit-check.cjs",
+      "bytes": 8266,
+      "sha256": "821d989b72f48714058dc9ea6496990dbfd43607a92e947675f347f8486cc075"
+    },
+    {
+      "path": "qa/i18n-check.cjs",
+      "bytes": 11164,
+      "sha256": "8a0dd3372ec2bba943dc12413f5b9c9b3fa2ada7153f3dca5984d1b67254e161"
+    },
+    {
+      "path": "qa/impeccable-review-20261126.cjs",
+      "bytes": 4778,
+      "sha256": "c5f2d93dc14e5502970de2c1ec3c0147255d627c47dc4ba896c32a69327e7ac5"
+    },
+    {
+      "path": "qa/journey-check.cjs",
+      "bytes": 24052,
+      "sha256": "7916985981a42259493d42cc95b6a96e4f5f8858b56c98ecbe82eff2ab722680"
+    },
+    {
+      "path": "qa/library-check.cjs",
+      "bytes": 8717,
+      "sha256": "21c76f546e40453e205988bccbdbe9b4645f5f4bf3a88ff4b32fc261fc1f1f16"
+    },
+    {
+      "path": "qa/polish-copy-20261126.cjs",
+      "bytes": 2133,
+      "sha256": "c42c88b23c93248fc055fbe4911d6edb593f58fa0dba65ae2a3780fdaa35ca2d"
+    },
+    {
+      "path": "qa/post-purchase-check.cjs",
+      "bytes": 5005,
+      "sha256": "49b1304064d95410685c52df3bfc66da5004f2c3593de6473bb918182395b27e"
+    },
+    {
+      "path": "qa/purchase-terms-check.cjs",
+      "bytes": 3486,
+      "sha256": "5798d80eea9cfe5f3ff5ad96d6f94894924d4acd4ef285303422c935105c831e"
+    },
+    {
+      "path": "qa/video-library-check.cjs",
+      "bytes": 6723,
+      "sha256": "e8d30b7d684bb63300c8e8f0b1059ee1f58d37855321eb5c7c762e8a16ec9e64"
+    },
+    {
+      "path": "readability.css",
+      "bytes": 1727,
+      "sha256": "581118189153e62cf5e95331f0ee32488cb94a94e7963e2085fd4caba52a3b2e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3146,
+      "sha256": "40e02047ab8e77be0f9935fa089bb27f5233006abf3baab4c4324c02e9672542"
+    },
+    {
+      "path": "result-content.js",
+      "bytes": 51400,
+      "sha256": "c20c0e2c85b8f99a0ce426f3e2b894f2081b3d660ee188cacc9103f5b7eb441a"
+    },
+    {
+      "path": "result-page.css",
+      "bytes": 18078,
+      "sha256": "ead111871d67e847d63eac3e2fddaebd249eba780da8a426f8a965ac2303d99d"
+    },
+    {
+      "path": "result-page.js",
+      "bytes": 16057,
+      "sha256": "72dad6dbefc5a5bdae7e8b238faf6547177671f8b0f14456278193526b66eb3f"
+    },
+    {
+      "path": "server.mjs",
+      "bytes": 2974,
+      "sha256": "dac1124ace3d7d387b524b5abe48d5f0ae074702fb7c8cebe9bea22b059d7eb1"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 43259,
+      "sha256": "7078bfceed0a22f04671a4fb30af0b286954b4a8304cf87faab81ea591805628"
+    },
+    {
+      "path": "video-library-data.js",
+      "bytes": 3692,
+      "sha256": "2f491058c557bfcb41fe905f1f427b56e7c27c17af07f904867ca85a7f33ad63"
+    },
+    {
+      "path": "video-library.css",
+      "bytes": 9367,
+      "sha256": "ce604b0f8bb2764031ad157e32a572be62c38fd7e03f9469e6d6b2dd5bb4a57a"
+    },
+    {
+      "path": "video-library.js",
+      "bytes": 15609,
+      "sha256": "9e1683bf88a8dc681fa0f3b71380bf8c6bece26c135670c67d842e52777c01cb"
+    }
+  ]
+}

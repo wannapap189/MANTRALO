@@ -1,0 +1,53 @@
+/* Reader needs and product-fit copy, scoped to the local MANTRALO preview. */
+.hero-copy h1{font-size:clamp(2.35rem,4.2vw,3.8rem);line-height:1.5}
+.customer-start{padding-bottom:44px}
+.customer-situations{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.customer-situations article{display:flex;flex-direction:column;align-items:flex-start;gap:18px;padding:30px;border:1px solid #e5d9f1;border-radius:24px;background:#f3ecff;min-width:0}
+.customer-situations article:nth-child(2){background:#eef8f5;border-color:#d5e8df}
+.customer-situations article:nth-child(3){background:#fff3e9;border-color:#f0dfce}
+.customer-label{font-size:.875rem;color:#5e397c;font-weight:600}
+.customer-situations h3{font-size:1.45rem;line-height:1.65;letter-spacing:-.02em}
+.customer-situations p{font-size:1rem;line-height:1.9;color:#5f5269}
+.customer-situations .text-link{font-size:1rem;margin-top:auto;white-space:normal}
+.customer-reassurance{margin-top:28px;text-align:center;font-size:1rem;color:#62536f}
+.customer-fit{padding:16px 0;border-top:1px solid #e7ddeb;margin-top:16px!important;font-size:1rem!important;line-height:1.85!important}
+.customer-fit strong{display:block;color:#4d286c;font-weight:600;margin-bottom:5px}
+.customer-course-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:24px}
+.customer-course-actions .text-link{font-size:1rem}
+.es-page .es-single-copy>p{color:#61506e}
+.es-page .es-single-copy>.es-reader-need{color:#4d286c}
+.es-page .es-single-copy>.es-reader-fit{font-size:1rem;color:#61506e;border-top:1px solid #e9dfee;padding-top:16px}
+.es-page .es-single-copy>.es-single-note{color:#6e577e}
+.es-page .es-single-price>span,.es-page .es-category{color:#765286}
+.ms-page .ms-product-copy>p{font-size:1rem;line-height:1.9;color:#61506e}
+.ms-page .ms-product-category,.ms-page .ms-product-price>span{font-size:.875rem;color:#765286}
+.ml-reader-need,.ml-reader-fit{color:#513565}
+.mantralo-home-hero .hero-copy h1{font-size:clamp(2.7rem,4.6vw,4.2rem);line-height:1.42}
+.mantralo-home-hero .hero-lead{font-size:1.25rem;line-height:1.8}
+.mantralo-home-hero .hero-description{font-size:1rem;line-height:1.9;max-width:36rem}
+.mantralo-home-hero .hero-footnote{font-size:.875rem}
+.home-concept-paths .customer-situations article{gap:16px;padding:30px}
+.home-concept-paths .customer-situations article:nth-child(3){background:#f0edff;border-color:#ded5f1}
+.home-entry-footer{width:100%;margin-top:auto;padding-top:12px}
+.home-entry-price{display:block;color:#512481;font-size:2rem;font-weight:600;line-height:1.4}
+.home-entry-price small{font-size:1rem;font-weight:400}
+.home-entry-note{display:block;min-height:3.5em;margin:7px 0 17px;color:#655170;font-size:.875rem;line-height:1.75}
+.home-concept-paths .home-entry-footer .button{width:100%;padding-inline:16px;white-space:normal;text-align:center;font-size:1rem;line-height:1.7}
+.home-concept-paths .customer-reassurance{max-width:55rem;margin-inline:auto;line-height:1.9}
+.home-credit-terms{display:inline-block;margin-top:6px;font-size:.875rem;line-height:1.8;color:#695675}
+.home-daily-pause{margin-top:58px;margin-bottom:20px}
+.home-daily-pause .practice-copy{padding-block:46px}
+.home-pause-steps{list-style:none;margin:24px 0;padding:0;display:grid;gap:15px}
+.home-pause-steps li{display:grid;grid-template-columns:6rem 1fr;align-items:baseline;gap:12px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.2)}
+.home-pause-steps strong{font-size:1rem;font-weight:500;color:#fff}
+.home-pause-steps span{font-size:1rem;line-height:1.8;color:#ede3fb}
+.home-closing-copy{font-size:1.125rem;line-height:1.9;color:#665075;max-width:34rem;margin:18px auto 28px}
+.home-closing-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.home-closing-actions .button{white-space:normal}
+.fk-page[data-free-kit] .fk-hero h1 br{display:none}
+.fk-page[data-free-kit] .fk-hero h1 em{display:block}
+@media(max-width:850px){.customer-situations{grid-template-columns:1fr}.customer-situations article{padding:26px}.customer-situations h3 br{display:none}.customer-start{padding-bottom:24px}.customer-course-actions{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.hero-copy h1{font-size:2.15rem;line-height:1.55}.customer-situations h3{font-size:1.3rem}.customer-reassurance{text-align:left}.customer-situations article{padding:24px}}
+@media(max-width:850px){.home-concept-paths .customer-situations article{padding:26px}.home-entry-note{min-height:0}.home-entry-footer{padding-top:4px}}
+@media(max-width:520px){.mantralo-home-hero .hero-copy h1{font-size:2.6rem;line-height:1.5}.mantralo-home-hero .hero-lead{font-size:1.125rem}.home-concept-paths .customer-situations article{padding:24px}}
+@media(max-width:600px){.home-daily-pause{margin-top:32px}.home-daily-pause .practice-copy{padding-block:30px}.home-pause-steps li{grid-template-columns:1fr;gap:3px}.home-closing-actions{flex-direction:column;align-items:stretch}.home-closing-copy{font-size:1rem}.home-closing-actions .button{width:100%}}

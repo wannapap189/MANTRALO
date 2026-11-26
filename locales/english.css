@@ -1,0 +1,33 @@
+/* Shared language control; English type and wrapping use the original layouts. */
+.language-switch{display:inline-flex;align-items:center;flex-shrink:0;border:1px solid #dfd0ed;background:#fff;border-radius:999px;padding:4px;gap:2px}
+.language-switch button{min-width:39px;min-height:36px;padding:5px 8px;border:0;background:transparent;color:#644c7c;border-radius:999px;font:500 .875rem/1.4 Manrope,Tahoma,sans-serif;cursor:pointer}
+.language-switch button[aria-pressed=true]{background:#6225c8;color:white}
+.language-switch button:disabled{opacity:.45;cursor:default}
+.language-switch button:focus-visible{outline:3px solid #b78be9;outline-offset:3px}
+.locale-notice{padding:11px 24px;border-bottom:1px solid #e8dff1;background:#f2ecfa;color:#594468;text-align:center;font:400 .875rem/1.7 Manrope,Tahoma,sans-serif}
+.locale-notice[hidden]{display:none}
+.locale-notice a{margin-left:12px;color:#572390;text-underline-offset:4px;font-weight:600}
+.locale-notice a[hidden]{display:none}
+.locale-modal-note{padding:14px 18px;background:#f1e9fa;border-radius:12px;color:#533b66;font:400 .875rem/1.7 Manrope,Tahoma,sans-serif;margin:10px 0 20px}
+html[lang=en] body{font-family:Manrope,Tahoma,sans-serif}
+html[lang=en] :is(h1,h2,h3){font-family:Manrope,Tahoma,sans-serif;line-height:1.24;letter-spacing:-.035em}
+html[lang=en] :is(p,li){line-height:1.8}
+html[lang=en] .button{white-space:normal;text-align:center;line-height:1.5}
+html[lang=en] .mantralo-home-hero .hero-copy h1{font-size:clamp(2.65rem,4.35vw,4.1rem);line-height:1.14;letter-spacing:-.045em}
+html[lang=en] .hero-description{line-height:1.85}
+html[lang=en] .main-nav{gap:18px;font-size:.875rem}
+html[lang=en] .home-concept-paths .customer-situations h3{font-size:1.45rem;line-height:1.35}
+html[lang=en] .home-entry-note{min-height:5.5em}
+html[lang=en] .chakra-choice strong,html[lang=en] .chakra-choice small{white-space:normal;line-height:1.4}
+html[lang=en] .cl-hero h1{line-height:1.12;font-size:clamp(2.6rem,4.4vw,4.4rem)}
+html[lang=en] .cl-hero h1 em{display:block}
+html[lang=en] .cl-hero h1 br{display:none}
+html[lang=en] .cl-hero-lead,html[lang=en] .bp-hero-description{line-height:1.8}
+html[lang=en] .cl-lesson-heading{line-height:1.4}
+html[lang=en] .cl-text-button,html[lang=en] .text-link{white-space:normal}
+html[lang=en] .cl-hero-actions,html[lang=en] .hero-actions{gap:18px;flex-wrap:wrap}
+html[lang=en] .bp-promise-strip .container{gap:16px;flex-wrap:wrap}
+html[lang=en] .bp-total-row,html[lang=en] .bp-bonus-footer{line-height:1.7}
+@media(max-width:1250px){.site-header .header-cta{display:none}.header-inner{gap:16px}html[lang=en] .main-nav{gap:14px;font-size:.8125rem}}
+@media(max-width:850px){.language-switch{margin-left:auto}.site-header .header-cta{display:none}.header-inner{gap:12px}.language-switch button{min-height:36px}html[lang=en] .main-nav{font-size:1rem}html[lang=en] .home-entry-note{min-height:0}}
+@media(max-width:620px){.locale-notice{text-align:left;padding:10px 18px;font-size:.8125rem}.locale-notice a{display:block;margin:6px 0 0}html[lang=en] .mantralo-home-hero .hero-copy h1{font-size:2.65rem;line-height:1.16}html[lang=en] .cl-hero h1{font-size:2.5rem}html[lang=en] .bp-hero h1{font-size:2.4rem}html[lang=en] .bp-promise-strip .container{flex-direction:column;align-items:flex-start}html[lang=en] .home-pause-steps li{gap:4px}html[lang=en] .cp-mobile-bar .button,html[lang=en] .bp-mobile-bar .button{font-size:.875rem;padding-inline:15px}html[lang=en] .course-facts{flex-wrap:wrap}}

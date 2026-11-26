@@ -1,0 +1,20 @@
+.home-ebooks { border-top:1px solid #eadff3; }
+.home-ebook-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; }
+.home-ebook-card { display:flex; flex-direction:column; align-items:stretch; padding:0; border:0; color:#35165a; background:transparent; text-align:left; cursor:pointer; font:inherit; min-width:0; }
+.home-ebook-cover { display:flex; justify-content:center; align-items:center; min-width:0; height:305px; padding:28px; background:var(--shelf-tint,#f1e8fa); border:1px solid #e8ddef; border-radius:18px; overflow:hidden; }
+.home-ebook-cover img { display:block; height:auto; width:auto; max-width:100%; max-height:100%; object-fit:contain; box-shadow:5px 10px 18px #30114825; transition:transform .2s ease; }
+.home-ebook-card:hover img { transform:translateY(-4px) rotate(-2deg); }
+.home-ebook-card:focus-visible { outline:3px solid #9958dd; outline-offset:6px; border-radius:18px; }
+.home-ebook-topic { font-size:.875rem; color:#826b94; margin:18px 0 5px; line-height:1.7; }
+.home-ebook-card strong { font-size:1.2rem; font-weight:600; line-height:1.5; }
+.home-ebook-detail { color:#6826ce; font-size:.875rem; text-decoration:underline; text-underline-offset:5px; margin-top:12px; }
+.home-ebooks-end { display:flex; justify-content:space-between; align-items:center; gap:24px; margin-top:32px; padding-top:26px; border-top:1px solid #e8ddef; }
+.home-ebooks-end p { color:#513769; font-size:1rem; line-height:1.8; }
+.home-ebooks-end p span { color:#826b94; font-size:.875rem; }
+.home-ebooks-end .button { flex:none; }
+@media(max-width:1050px) { .home-ebook-grid { gap:18px; } .home-ebook-cover { height:260px; padding:23px; } }
+@media(max-width:800px) { .home-ebook-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 20px; } .home-ebook-cover { height:285px; } }
+@media(max-width:520px) { .home-ebook-grid { gap:24px 14px; } .home-ebook-cover { height:214px; padding:18px 15px; border-radius:14px; } .home-ebook-card strong { font-size:1rem; } .home-ebook-topic { margin-top:13px; font-size:.875rem; } .home-ebooks-end { flex-direction:column; align-items:stretch; } }
+@media(prefers-reduced-motion:reduce) { .home-ebook-cover img { transition:none; } }
+/* Entry points for the complete learning journey. */
+.home-journey-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.home-journey-grid article{padding:28px;border:1px solid #e5d6ef;border-radius:24px;background:#faf5ff;display:flex;flex-direction:column;align-items:flex-start}.home-journey-grid article:nth-child(2){background:#eef7fb}.home-journey-grid article:nth-child(3){background:#fff5ec}.home-journey-grid article>span{font-size:14px;letter-spacing:.06em;color:#78538f}.home-journey-grid h3{font-size:22px;margin:16px 0 10px;color:#3e214f}.home-journey-grid p{font-size:16px;line-height:1.9;color:#715c7e;margin:0 0 24px}.home-journey-grid .button{margin-top:auto;font-size:16px;white-space:normal;text-align:center}@media(max-width:850px){.home-journey-grid{grid-template-columns:1fr}.home-journey-grid article{padding:24px}.home-journey-grid .button{width:100%}}

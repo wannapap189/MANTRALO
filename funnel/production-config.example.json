@@ -1,0 +1,10 @@
+{
+  "publicAssetBaseUrl": "",
+  "links": {
+    "book": "",
+    "course": "",
+    "guide": "",
+    "quiz": "https://chakra.emcthai.com/7-chakras-testing"
+  },
+  "videoUrls": {}
+}

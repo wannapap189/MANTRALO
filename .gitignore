@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+dist/
+qa/**/*.png
+qa/**/*report*.json
+qa/**/*report*.txt
+qa/impeccable-*.json
+*.tgz
+*.zip
+design/**/baseline*
+design/**/component.tgz

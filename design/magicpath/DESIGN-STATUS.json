@@ -1,0 +1,26 @@
+{
+  "projectId": "476588229383036928",
+  "componentId": "476588232818171904",
+  "revisionId": "476588232818171905",
+  "generatedName": "freshly-lake-3141",
+  "status": "MagicPath build completed; native preview visually inspected",
+  "scope": [
+    "home",
+    "book",
+    "course",
+    "free-kit/checklist dialogs",
+    "3-minute practice timer"
+  ],
+  "approvedTerms": {
+    "bookTHB": 290,
+    "shippingTHB": 59,
+    "totalTHB": 349,
+    "courseMonths": 12,
+    "coursePriceTHB": 2900,
+    "verifiedFullCreditTHB": 290,
+    "upgradeTHB": 2610
+  },
+  "publication": "Design in MagicPath only; existing local storefront and production services unchanged",
+  "assets": "Original MANTRALO logo, book cover and instructor photo",
+  "notes": "Archive accepted with three raster assets. Host TTF assets were not supported; Noto Sans Thai is loaded via Google Fonts. No payment, credit verification, contact submission or live media integration. Native preview verified; mobile runtime not yet exercised in MagicPath."
+}

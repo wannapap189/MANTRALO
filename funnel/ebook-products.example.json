@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "status": "local-proposal-not-connected",
+  "currency": "THB",
+  "note": "Review-only product mapping. Do not load as live checkout configuration. Prices and credit eligibility must be verified server-side before collecting payment.",
+  "offers": [
+    {
+      "offerId": "ebook-seven-days",
+      "title": "7 วัน 7 จักระ",
+      "proposedPrice": 290,
+      "bookIds": [
+        "seven-days"
+      ],
+      "starterAllocation": 290,
+      "requiresPaidOffer": null,
+      "traffioProductId": null,
+      "traffioPageUrl": null,
+      "deliveryGroupId": null,
+      "manuscriptApproved": false
+    },
+    {
+      "offerId": "ebook-lucky-by-design",
+      "title": "Lucky by Design",
+      "proposedPrice": 190,
+      "bookIds": [
+        "lucky-by-design"
+      ],
+      "starterAllocation": 0,
+      "requiresPaidOffer": null,
+      "traffioProductId": null,
+      "traffioPageUrl": null,
+      "deliveryGroupId": null,
+      "manuscriptApproved": false
+    },
+    {
+      "offerId": "ebook-unlock-love",
+      "title": "Unlock Love",
+      "proposedPrice": 190,
+      "bookIds": [
+        "unlock-love"
+      ],
+      "starterAllocation": 0,
+      "requiresPaidOffer": null,
+      "traffioProductId": null,
+      "traffioPageUrl": null,
+      "deliveryGroupId": null,
+      "manuscriptApproved": false
+    },
+    {
+      "offerId": "ebook-office-chakra",
+      "title": "Office Chakra",
+      "proposedPrice": 190,
+      "bookIds": [
+        "office-chakra"
+      ],
+      "starterAllocation": 0,
+      "requiresPaidOffer": null,
+      "traffioProductId": null,
+      "traffioPageUrl": null,
+      "deliveryGroupId": null,
+      "manuscriptApproved": false
+    },
+    {
+      "offerId": "ebook-inner-radiance",
+      "title": "เปล่งประกายภายใน",
+      "proposedPrice": 190,
+      "bookIds": [
+        "inner-radiance"
+      ],
+      "starterAllocation": 0,
+      "requiresPaidOffer": null,
+      "traffioProductId": null,
+      "traffioPageUrl": null,
+      "deliveryGroupId": null,
+      "manuscriptApproved": false
+    },
+    {
+      "offerId": "ebook-crystal-harmony",
+      "title": "Crystal Harmony",
+      "proposedPrice": 190,
+      "bookIds": [
+        "crystal-harmony"
+      ],
+      "starterAllocation": 0,
+      "requiresPaidOffer": null,
+      "traffioProductId": null,
+      "traffioPageUrl": null,
+      "deliveryGroupId": null,
+      "manuscriptApproved": false
+    },
+    {
+      "offerId": "ebook-crystal-water",
+      "title": "ขวดน้ำอมฤตคริสตัล",
+      "proposedPrice": 99,
+      "bookIds": [
+        "crystal-water"
+      ],
+      "starterAllocation": 0,
+      "requiresPaidOffer": null,
+      "traffioProductId": null,
+      "traffioPageUrl": null,
+      "deliveryGroupId": null,
+      "manuscriptApproved": false
+    },
+    {
+      "offerId": "ebook-crystal-healing",
+      "title": "The Power of Crystal Healing",
+      "proposedPrice": 149,
+      "bookIds": [
+        "crystal-healing"
+      ],
+      "starterAllocation": 0,
+      "requiresPaidOffer": null,
+      "traffioProductId": null,
+      "traffioPageUrl": null,
+      "deliveryGroupId": null,
+      "manuscriptApproved": false
+    },
+    {
+      "offerId": "life-four",
+      "title": "ชีวิตประจำวัน · 4 เล่ม",
+      "proposedPrice": 590,
+      "bookIds": [
+        "lucky-by-design",
+        "unlock-love",
+        "office-chakra",
+        "inner-radiance"
+      ],
+      "starterAllocation": 0,
+      "requiresPaidOffer": null,
+      "traffioProductId": null,
+      "traffioPageUrl": null,
+      "deliveryGroupId": null,
+      "manuscriptApproved": false
+    },
+    {
+      "offerId": "all-eight",
+      "title": "MANTRALO Complete · ครบ 8 เล่ม",
+      "proposedPrice": 1090,
+      "bookIds": [
+        "seven-days",
+        "lucky-by-design",
+        "unlock-love",
+        "office-chakra",
+        "inner-radiance",
+        "crystal-harmony",
+        "crystal-water",
+        "crystal-healing"
+      ],
+      "starterAllocation": 290,
+      "requiresPaidOffer": null,
+      "traffioProductId": null,
+      "traffioPageUrl": null,
+      "deliveryGroupId": null,
+      "manuscriptApproved": false
+    },
+    {
+      "offerId": "complete-seven",
+      "title": "เติมคลังอีก 7 เล่ม",
+      "proposedPrice": 800,
+      "bookIds": [
+        "lucky-by-design",
+        "unlock-love",
+        "office-chakra",
+        "inner-radiance",
+        "crystal-harmony",
+        "crystal-water",
+        "crystal-healing"
+      ],
+      "starterAllocation": 0,
+      "requiresPaidOffer": null,
+      "traffioProductId": null,
+      "traffioPageUrl": null,
+      "deliveryGroupId": null,
+      "manuscriptApproved": false
+    },
+    {
+      "offerId": "complete-from-four",
+      "title": "เติมจากชุดชีวิตประจำวันให้ครบ 8",
+      "proposedPrice": 500,
+      "bookIds": [
+        "seven-days",
+        "crystal-harmony",
+        "crystal-water",
+        "crystal-healing"
+      ],
+      "starterAllocation": 290,
+      "requiresPaidOffer": "life-four",
+      "traffioProductId": null,
+      "traffioPageUrl": null,
+      "deliveryGroupId": null,
+      "manuscriptApproved": false
+    }
+  ],
+  "credit": {
+    "coursePrice": 2900,
+    "maxCredit": 290,
+    "fullCreditRemainder": 2610,
+    "oneUseOnly": true,
+    "exclude": [
+      "shipping",
+      "non-starter-ebooks",
+      "refunded-orders",
+      "previously-used-credit"
+    ],
+    "verification": "A page view, selected offer, query string, or client-side amount never approves credit or grants access."
+  }
+}

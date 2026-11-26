@@ -1,0 +1,61 @@
+{
+  "mode": "draft-only-not-connected",
+  "templates": [
+    {
+      "product": "book",
+      "status": "pending",
+      "subject": "MANTRALO ได้รับรายการแล้ว — กำลังตรวจยอดชำระ",
+      "html": "book-pending.html",
+      "text": "book-pending.txt"
+    },
+    {
+      "product": "book",
+      "status": "ready",
+      "subject": "หนังสือดิจิทัล 7 วัน 7 จักระของคุณ พร้อมเปิดอ่านแล้ว",
+      "html": "book-ready.html",
+      "text": "book-ready.txt"
+    },
+    {
+      "product": "digital",
+      "status": "pending",
+      "subject": "MANTRALO ได้รับรายการแล้ว — กำลังตรวจยอดชำระ",
+      "html": "digital-pending.html",
+      "text": "digital-pending.txt"
+    },
+    {
+      "product": "digital",
+      "status": "ready",
+      "subject": "หนังสือดิจิทัล 7 วัน 7 จักระของคุณ พร้อมเปิดอ่านแล้ว",
+      "html": "digital-ready.html",
+      "text": "digital-ready.txt"
+    },
+    {
+      "product": "course",
+      "status": "pending",
+      "subject": "MANTRALO ได้รับรายการแล้ว — กำลังตรวจยอดชำระ",
+      "html": "course-pending.html",
+      "text": "course-pending.txt"
+    },
+    {
+      "product": "course",
+      "status": "ready",
+      "subject": "เริ่มต้นคอร์ส MANTRALO 12 บท และรับหนังสือดิจิทัลของคุณ",
+      "html": "course-ready.html",
+      "text": "course-ready.txt"
+    },
+    {
+      "product": "upgrade",
+      "status": "pending",
+      "subject": "MANTRALO ได้รับรายการแล้ว — กำลังตรวจยอดชำระ",
+      "html": "upgrade-pending.html",
+      "text": "upgrade-pending.txt"
+    },
+    {
+      "product": "upgrade",
+      "status": "ready",
+      "subject": "เริ่มต้นคอร์ส MANTRALO 12 บท และรับหนังสือดิจิทัลของคุณ",
+      "html": "upgrade-ready.html",
+      "text": "upgrade-ready.txt"
+    }
+  ]
+}

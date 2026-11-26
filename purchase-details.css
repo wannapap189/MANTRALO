@@ -1,0 +1,23 @@
+.pd-section{padding-block:58px;border-block:1px solid var(--line);scroll-margin-top:110px}
+.pd-section h2{font-size:clamp(1.65rem,3vw,2.2rem);line-height:1.5;max-width:30ch;margin-bottom:16px}
+.pd-section h3{font-size:1.15rem;line-height:1.6;margin-bottom:15px}
+.pd-proposal{display:inline-block;background:#eee3fa;color:#56316e;border:1px solid #d9c4eb;padding:7px 12px;border-radius:8px;font-size:.875rem!important;line-height:1.6;margin:0 0 20px!important}
+.pd-intro{max-width:68ch;color:var(--text-secondary);margin-bottom:26px}
+.pd-columns{display:grid;grid-template-columns:1fr 1fr;gap:42px;margin-top:25px}
+.pd-columns>div{min-width:0}
+.pd-columns p,.pd-steps p{font-size:1rem;line-height:1.85;margin:12px 0;color:#604b70}
+.pd-receipt{margin:0 0 20px}.pd-receipt>div{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding:13px 0}.pd-receipt dt{max-width:75%;color:#604b70}.pd-receipt dd{margin:0;white-space:nowrap;font-weight:600;color:var(--purple-deep)}
+.pd-receipt .pd-total{font-size:1.1rem;background:#f1e8fb;padding:15px;border-bottom:0;border-radius:10px;margin-top:10px}.pd-total dt{color:var(--purple-deep)}
+.pd-section .pd-note{font-size:.875rem;line-height:1.8;color:#644b74}
+.pd-inclusions{padding-left:22px}.pd-inclusions li{padding:6px 0;font-size:1rem;line-height:1.8}
+.pd-access{background:#f2eafa;border-radius:16px;padding:26px}
+.pd-access .pd-duration{font-size:2.8rem;font-weight:600;color:#622a91;line-height:1.2;margin:18px 0}
+.pd-delivery-title{margin-top:36px}
+.pd-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;padding:0;list-style:none;counter-reset:delivery}
+.pd-steps li{counter-increment:delivery;border-top:2px solid #c5a6e1;padding-top:18px}.pd-steps strong{display:block;color:#422253;line-height:1.7}.pd-steps strong:before{content:counter(delivery) '. ';color:#7135a6}
+.pd-boundary{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:.875rem;color:#644b74;line-height:1.8}
+.pd-modal{padding:18px;margin-block:22px;background:#f5effa;border-radius:12px}.pd-modal p{font-size:.9375rem;line-height:1.8;color:#604b70}.pd-modal p+p{margin-top:12px}
+.pd-hero-link{margin-top:14px;min-height:44px;text-align:left}
+@media(max-width:760px){.pd-columns,.pd-steps{grid-template-columns:1fr;gap:26px}.pd-section{padding-block:38px}.pd-access{padding:22px}.pd-receipt dt{max-width:70%}.pd-receipt .pd-total{font-size:1rem}.pd-hero-link{font-size:.9375rem}}
+
+.pd-preview-link{display:inline-flex;align-items:center;min-height:48px;padding-block:10px;line-height:1.7}

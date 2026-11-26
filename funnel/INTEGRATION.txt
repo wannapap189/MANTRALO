@@ -1,0 +1,115 @@
+MANTRALO RESULT - เชื่อมส่วนแสดงผลกับ Funnel เดิม
+สถานะ: ชุดเตรียมติดตั้งในเครื่อง ยังไม่แก้เว็บไซต์จริง ไม่เผยแพร่ และไม่ได้เรียก write API
+ขอบเขตล่าสุด: จบตัวอย่างทุกหน้าในเครื่องก่อน การ export/archive/LLMS/GitHub รอผู้ใช้สั่งภายหลัง ไม่รันเครื่องมือ production ตอนนี้
+หลักฐานที่ใช้: web-source-audit/quiz/declared-funnel-pages.json, source-status.json, result-descriptions.json
+การอ่านต้นทางครั้งนี้เป็น public GET เท่านั้น ไม่ได้ทดสอบการส่งคำตอบหรือการสร้างรายชื่อลูกค้า
+
+1. ขอบเขตการเปลี่ยน
+เปลี่ยนเฉพาะส่วนแสดงผลของหน้า result 14 หน้า: จักระ 1-7 x balance/unbalance
+ใช้ URL, pageId และ funnelId เดิมตาม route-map.json ทุกตัว ไม่สร้างหน้าใหม่ทดแทน ไม่เปลี่ยน slug และไม่ redirect ไปเส้นทางใหม่
+เก็บแบบฟอร์มเดิม ชื่อ field ตัวเลือก ค่าน้ำหนัก/คะแนน เกณฑ์ผลลัพธ์ และคำสั่งเลือกหน้าผลของระบบเดิมทั้งหมด
+เก็บการทำงาน server, contacts, contact matching, tags, membership, cookies และ runtime ของ Funnel เดิม
+ไม่ลบทั้ง body/page layout แล้วใส่แอปแทน ให้เปลี่ยนเฉพาะ content block ที่ใช้แสดงผล ภายในขอบเขต DOM ของ MANTRALO
+ต้องตรวจว่า result block เดิมมี tracking หรือการทำงานเชื่อมระบบหรือไม่ก่อนย้าย/ลบ block; หลักฐาน public ไม่ยืนยันพฤติกรรมหลังบ้าน
+ไม่มีการเพิ่มแบบฟอร์มเก็บอีเมลซ้ำ ไม่มี contact API ใหม่ ไม่มีการ submit ซ้ำเมื่อ render/reload/mount
+การเข้า URL ผลลัพธ์โดยตรงไม่ได้ยืนยันว่าบุคคลนั้นตอบแบบทดสอบแล้ว และไม่ถือเป็นการวินิจฉัยสุขภาพ
+
+2. การจับคู่หน้า
+route-map.json คือข้อมูลอ้างอิง ไม่ใช่ไฟล์ import ของ native builder และไม่ใช่คำสั่งเปลี่ยนข้อมูลในระบบ
+จับคู่แต่ละหน้าโดย exact URL/path + pageId จากแหล่งเดิม ไม่คำนวณ pageId ใหม่จากลำดับจักระ
+ชื่อ outcome ใช้เฉพาะ balance หรือ unbalance ตามเส้นทางเดิม ห้ามสลับผลหรืออนุมานจากคำแปลไทย
+หน้าจักระ 7 มี pageId balance=138 และ unbalance=137; อย่าใช้การเรียง ID เพื่อเดาผล
+หน้าแบบทดสอบหลักคง https://chakra.emcthai.com/7-chakras-testing
+ค่า chakra/outcome ที่ส่งให้ renderer เป็นการเลือก content ของหน้าที่ระบบเดิมพามาถึง ไม่ใช่การคำนวณคะแนนใหม่
+เก็บ legacyVideoUrls ไว้เพื่อเทียบแหล่งเดิมเท่านั้น ไม่เปิดเล่นหรือใส่ในข้อเสนอใหม่โดยอัตโนมัติ
+
+3. Shared renderer contract
+ทุกหน้าจะโหลดไฟล์กลางชุดเดียวกัน:
+- result-page.css
+- result-content.js
+- result-page.js
+รอระบุตำแหน่งไฟล์ที่ใช้งานจริงก่อนติดตั้ง; ต้องเป็น URL ที่ browser บนเว็บไซต์จริงเข้าถึงได้ ไม่ใช่ path D: หรือ path ของ local preview
+โหลด result-content.js ก่อน result-page.js และรอให้โหลดสำเร็จก่อนเรียก renderer
+API ที่ตกลงกับ frontend:
+window.MANTRALO_RESULT.render({
+  chakra: 2,
+  outcome: 'unbalance',
+  preview: false,
+  links: {
+    book: '#/book',
+    course: '#/course',
+    guide: '#/library',
+    quiz: 'https://chakra.emcthai.com/7-chakras-testing'
+  },
+  assetBase: 'assets/',
+  videoUrl: ''
+})
+render คืน HTML string: ตั้ง root.innerHTML = window.MANTRALO_RESULT.render(options) แล้วเรียก window.MANTRALO_RESULT.mount(root)
+mount(root) คืน cleanup function; ตัว bootstrap เก็บไว้ที่ root.mantraloCleanup และเรียกก่อน mount ใหม่
+root ของเนื้อหามี .mr-page; CSS ของส่วนแสดงผลใช้ชื่อขึ้นต้น mr- เพื่อแยกจากองค์ประกอบของ builder
+CustomEvent mantralo:result-action มี detail {action,chakra,outcome} และอยู่ใน browser เท่านั้น ไม่มีการส่งเครือข่ายหรือสร้าง contact อัตโนมัติ
+mount ต้องผูก event เฉพาะภายใน root และเรียกซ้ำได้โดยไม่เพิ่ม listener ซ้ำ; ไม่แทรก handler ใน form/quiz ของ builder
+ไม่ใช้ onclick/onchange หรือ inline event handler ใน snippet ใช้ mount/addEventListener ผ่านไฟล์กลาง
+CSS ต้องจำกัดขอบเขตอยู่ใน root ของ MANTRALO ไม่เปลี่ยน global body/button/input/form ของ Funnel
+preview=true เปิดแถบเลือกผลสำหรับตรวจแบบ; ไฟล์ preview 14 หน้าใช้ preview=false และมีป้ายตัวอย่างในเครื่องอยู่นอก component แทน
+preview=false ไม่ใช่การยืนยันว่าเคยตอบคำถามหรือมีเครดิต เพียงซ่อนแถบเลือกตัวอย่างของ component
+videoUrl ว่างไว้ก่อนจนได้ URL วิดีโอใหม่ที่ผู้ดูแลเลือก ไม่เดา embed endpoint และไม่ใส่ autoplay
+ไม่เพิ่ม field ระบุตัวบุคคล token หรือเครดิตเข้า configuration นี้
+
+4. ลิงก์การขายและเครดิต
+#/book และ #/course ใช้ได้ใน local MANTRALO preview เท่านั้น หากวางบน chakra.emcthai.com จะเป็น hash ของหน้าเดิม ไม่ใช่หน้าขาย MANTRALO
+ก่อนเผยแพร่ต้องแทน links.book และ links.course ด้วย URL หน้าขายที่ยืนยันแล้ว; ห้ามเดา domain/path หรือเชื่อมไป checkout ที่ยังไม่พร้อม
+links.quiz ใช้ URL แบบทดสอบเดิมตามข้างต้น
+คำอธิบายราคา/สิทธิ์ต้องตรงแผน: หนังสือ 290 บาท, คอร์ส 12 บท ราคาเสนอ 2,900 บาท, เครดิตยอดซื้อจริงสูงสุด 290 บาทเมื่อระบบหรือแอดมินยืนยัน
+หน้า result ไม่ตรวจสิทธิ์เครดิตเอง ไม่ใช้ localStorage, query string, checkbox, session state หรือ pageId ยืนยันการชำระเงิน
+เครดิตจริงต้องตรวจออเดอร์และสิทธิ์ทางระบบเดิม/แอดมิน ใช้ครั้งเดียว ไม่สะสมหลายเล่ม ไม่รวมค่าส่งหรือ Office Chakra
+ค่า 2,610 บาทเป็นตัวอย่างเมื่อเครดิตครบ 290 บาท ไม่ใช่ยอดยืนยันสำหรับผู้เข้าหน้าผลทุกคน
+หน้า result ไม่สร้าง contact, tags, member access, subscription, order หรือรายการชำระเงิน
+
+5. สิ่งที่ต้องตรวจใน builder ก่อนเลือกวิธีติดตั้ง
+ยังไม่ยืนยันว่า HTML/code block ของระบบรองรับ external JavaScript, inline bootstrap script, CSS และ lifecycle เมื่อเปลี่ยนหน้า Funnel อย่างไร
+ยังไม่ยืนยัน Content Security Policy, script sanitization, asset hosting, caching, หรือว่าหน้าเปลี่ยนผ่านแบบ full reload/SPA
+ห้ามอ้างว่า route-map.json หรือ snippet เป็น native builder import และไม่เดาหรือเรียก Traffio API
+ผู้ดูแลตรวจความสามารถในพื้นที่ทดสอบ/preview ที่ระบบมีจริงก่อน โดยไม่เปลี่ยน URL/pageId ของหน้า live
+หากรองรับ external assets และ bootstrap ตามที่ rendererต้องใช้: ใส่ shared CSS/JS ครั้งเดียวและใส่ root/config เฉพาะหน้า
+หาก script ถูกตัดหรือไม่ทำงาน: ยังติดตั้ง interactions ไม่ได้ ให้ใช้วิธี embed/code ที่ผู้ให้บริการยืนยัน หรือจัด layout แบบ native ตามต้นแบบหลังเลือกวิธีแล้ว
+ไม่ใส่ iframe ครอบทั้ง Funnel หรือใช้ workaround เพื่อหลบข้อจำกัดของระบบโดยไม่ตรวจผลต่อ form/contact/สมาชิก
+คงส่วนแสดงผลเดิมไว้จนไฟล์กลางโหลดและ render สำเร็จ เพื่อมี fallback หาก CDN/script มีปัญหา
+
+6. ชุดสำหรับตรวจในเครื่องและเตรียม export
+รันจากโฟลเดอร์นี้: node build-package.mjs
+สร้าง review-index.html และ preview/result-chakra1-balance.html ... preview/result-chakra7-unbalance.html รวม 14 หน้า
+ทุกหน้าใช้ ../../result-content.js, ../../result-page.js, ../../result-page.css และ ../../assets/fonts.css ชุดเดียวกัน
+มีโลโก้เดิม ป้ายตัวอย่างในเครื่อง และลิงก์กลับเว็บในเครื่อง; ไม่ส่งคำตอบหรือสร้างข้อมูลลูกค้า
+เมื่อแก้ content/renderer ให้รัน generator ใหม่เพื่อปรับ HTML ที่ render ไว้สำหรับอ่านแบบไม่มี JavaScriptด้วย
+
+production-config.example.json เว้น publicAssetBaseUrl และ links.book/course/guide ว่างไว้โดยตั้งใจ
+คัดลอกเป็น production-config.json แล้วกรอก URL จริงที่ตรวจแล้วก่อน export
+publicAssetBaseUrl คือ HTTPS directory ที่มี logo.png, book-new-edition.png และ font-*.ttf อยู่โดยตรง เช่น directory ของ assets ที่นำขึ้นระบบจริง ไม่ใช่ directory ของไฟล์ JS
+ไม่ใส่ URL ตัวอย่าง localhost, IP, .test, .invalid, example.com หรือ hash อย่าง #/book เป็น production config
+links.book/course/guide ต้องเป็น absolute HTTPS URL ของหน้าขาย/คลังคู่มือที่ยืนยันแล้ว ไม่ใช่ checkout/cart เดิม รวมถึงคอร์สเก่าที่ข้อเสนอราคาไม่ตรง
+links.quiz ต้องคง https://chakra.emcthai.com/7-chakras-testing
+videoUrls เป็น object ว่างไว้ก่อนได้; หากใช้ให้กำหนดตาม slug เช่น result-chakra2-unbalance และเป็น URL HTTPS ของไฟล์วิดีโอที่ video element เปิดได้ ไม่ใช่หน้า watch/embed ที่ยังไม่แปลง
+ตัวตรวจ URL เป็นการตรวจรูปแบบและตัด local/placeholder/checkout routes ไม่ได้ยืนยันว่า URL ออนไลน์หรือราคาในหน้าปลายทางถูกต้อง ต้องเปิดตรวจหน้าปลายทางก่อนติดตั้ง
+
+คำสั่งที่เก็บไว้ใช้ภายหลังเมื่อผู้ใช้สั่ง export และ config พร้อม: node export-traffio.mjs production-config.json
+สร้าง production-export/ เป็น 14 snippets และ manifest.json โดยไม่ upload ไม่เรียก API และไม่แก้เว็บจริง
+ไม่มีการรัน production export ด้วย config ว่างในงานนี้
+ทุก snippet มี CSS + source result-content.js + source result-page.js + bootstrap จากไฟล์กลางชุดเดียวกัน เพื่อให้วางเป็น display block ได้หลังตรวจ builder; ไม่แก้เนื้อหาแยก 14 ชุด
+ตัว export เปลี่ยน URL font เป็น absolute และเก็บ original URL/pageId/funnelId พร้อม hash ของ source และ snippet ใน manifest
+snippets มี inline script blocks แต่ไม่มี inline event handlers เช่น onclick; หาก builder ลบ/ไม่รัน script ต้องเลือกวิธีที่ระบบรองรับก่อน ไม่ถือว่าติดตั้งสำเร็จ
+HTML ของเนื้อหาถูก render ไว้ล่วงหน้า จึงยังอ่านและเปิดลิงก์ปกติได้แม้ script ไม่รัน แต่ interaction จะไม่ครบและยังไม่ผ่านการตรวจรับ
+manifest และชื่อ export-traffio.mjs ไม่ใช่ native import format/Traffio API; เป็นเพียงชุดไฟล์แสดงผลที่เตรียมไว้ในเครื่อง
+
+7. การตรวจรับเมื่อเลือกวิธีติดตั้งแล้ว
+- ครบ 14 คู่และจับคู่กับหน้าเดิมตรงตาม route-map.json โดยเฉพาะ ID ที่ไม่ได้เรียงตาม outcome
+- เปิด preview ทั้ง balance/unbalance ของจักระ 1-7 ได้ สี ชื่อ และเนื้อหาตรงกัน
+- render/mount ซ้ำไม่เพิ่ม contact, listener, tags หรือ submission ซ้ำ
+- ฟอร์ม คะแนน เกณฑ์ผล และ redirect เดิมยังเป็นผู้กำหนดผลทั้งหมด
+- URL/pageId/funnelId เดิมไม่เปลี่ยน และ CTA ไปยังหน้าที่ตรวจแล้ว
+- การทดสอบ flow ที่ส่งข้อมูลจริงต้องใช้แนวทาง test ของระบบเดิม ไม่ส่งคำตอบหรือสร้างรายชื่อจริงในงานจัดแพ็กเกจนี้
+- ตรวจมือถือ คีย์บอร์ด และความล้มเหลวของ asset load โดยคงส่วนเดิมไว้เป็น fallback
+- เก็บสำเนา block/การตั้งค่าเดิมและรายการหน้าที่เปลี่ยน เพื่อย้อนคืนเฉพาะส่วนแสดงผลได้
+
+ไฟล์ในโฟลเดอร์นี้ยังอยู่ในเครื่อง ไม่ใช่การเผยแพร่หรือเปลี่ยน production
+การเชื่อมหนังสือ/คอร์ส/ตรวจเครดิตดู COMMERCE-HANDOFF.txt และ connection-map.json; connection.js ทำหน้าที่คืนลิงก์สาธารณะที่ตั้งค่าเท่านั้น

@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "origin": "https://chakra.emcthai.com",
+  "quizUrl": "https://chakra.emcthai.com/7-chakras-testing",
+  "scope": "Display-only replacement for the 14 existing result pages; preserve original page IDs, URLs, forms, scoring, server routing, contacts, tags, and member access.",
+  "sourceAuditRetrievedAt": "2026-11-19T11:23:44.591Z",
+  "builderScriptCapability": "unverified",
+  "published": false,
+  "evidence": [
+    "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\declared-funnel-pages.json",
+    "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\source-status.json",
+    "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-descriptions.json"
+  ],
+  "routes": [
+    {
+      "url": "https://chakra.emcthai.com/result-chakra1-balance",
+      "path": "/result-chakra1-balance",
+      "pageId": 123,
+      "funnelId": 1,
+      "chakra": 1,
+      "outcome": "balance",
+      "sourceTitle": "ผลลัพธ์จักระที่ 1 สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:43.185Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra1-balance.html",
+      "sourceSha256": "ecd21a83dadd11fed2860f159cb8c2d39adb52e93401bbb5fc76eb4602940107",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/TeKbzXIm"
+      ]
+    },
+    {
+      "url": "https://chakra.emcthai.com/result-chakra1-unbalance",
+      "path": "/result-chakra1-unbalance",
+      "pageId": 125,
+      "funnelId": 1,
+      "chakra": 1,
+      "outcome": "unbalance",
+      "sourceTitle": "ผลลัพธ์จักระที่ 1 ไม่สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:43.194Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra1-unbalance.html",
+      "sourceSha256": "4e5201a4dca26d31502b6daeb6153f5a011031de056dfceab5188f234fb0e8fb",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/WeI1Bvqe"
+      ]
+    },
+    {
+      "url": "https://chakra.emcthai.com/result-chakra2-balance",
+      "path": "/result-chakra2-balance",
+      "pageId": 124,
+      "funnelId": 1,
+      "chakra": 2,
+      "outcome": "balance",
+      "sourceTitle": "ผลลัพธ์จักระที่ 2 สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:43.516Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra2-balance.html",
+      "sourceSha256": "3bcf83ed6562d80c85b4954c189d647f7b1cc8d68baaa8afcae86b1f97182178",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/3PaDZylc"
+      ]
+    },
+    {
+      "url": "https://chakra.emcthai.com/result-chakra2-unbalance",
+      "path": "/result-chakra2-unbalance",
+      "pageId": 126,
+      "funnelId": 1,
+      "chakra": 2,
+      "outcome": "unbalance",
+      "sourceTitle": "ผลลัพธ์จักระที่ 2 ไม่สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:43.487Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra2-unbalance.html",
+      "sourceSha256": "45b3ac207f69272ad9fbc21d24e1e2782e4c144030c6bb2f45e9e5fbae42bbb8",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/D7ZDXMRg"
+      ]
+    },
+    {
+      "url": "https://chakra.emcthai.com/result-chakra3-balance",
+      "path": "/result-chakra3-balance",
+      "pageId": 127,
+      "funnelId": 1,
+      "chakra": 3,
+      "outcome": "balance",
+      "sourceTitle": "ผลลัพธ์จักระที่ 3 สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:43.515Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra3-balance.html",
+      "sourceSha256": "1ee907ecdb9fab77f74a2596c5a4a858e16b126fb723f3fa863b0f08d75a0517",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/Xzdc_z8r"
+      ]
+    },
+    {
+      "url": "https://chakra.emcthai.com/result-chakra3-unbalance",
+      "path": "/result-chakra3-unbalance",
+      "pageId": 130,
+      "funnelId": 1,
+      "chakra": 3,
+      "outcome": "unbalance",
+      "sourceTitle": "ผลลัพธ์จักระที่ 3 ไม่สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:43.547Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra3-unbalance.html",
+      "sourceSha256": "f811c3faae57375a1f1ed3d28f4322c56e804c185025bb9ba4a765735a32fac6",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/EluVAh0g"
+      ]
+    },
+    {
+      "url": "https://chakra.emcthai.com/result-chakra4-balance",
+      "path": "/result-chakra4-balance",
+      "pageId": 129,
+      "funnelId": 1,
+      "chakra": 4,
+      "outcome": "balance",
+      "sourceTitle": "ผลลัพธ์จักระที่ 4 สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:43.905Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra4-balance.html",
+      "sourceSha256": "ae87e14244e34723572729e8dfdebc6635a32ba13e0d3a9c2adbabfb6eb9da57",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/aZCvdj9j"
+      ]
+    },
+    {
+      "url": "https://chakra.emcthai.com/result-chakra4-unbalance",
+      "path": "/result-chakra4-unbalance",
+      "pageId": 131,
+      "funnelId": 1,
+      "chakra": 4,
+      "outcome": "unbalance",
+      "sourceTitle": "ผลลัพธ์จักระที่ 4 ไม่สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:43.906Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra4-unbalance.html",
+      "sourceSha256": "fa11b84bdee9d62580e719662b640742ea77cf93b2fb1ad288fbe9de10fe8522",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/fYwIznz6"
+      ]
+    },
+    {
+      "url": "https://chakra.emcthai.com/result-chakra5-balance",
+      "path": "/result-chakra5-balance",
+      "pageId": 133,
+      "funnelId": 1,
+      "chakra": 5,
+      "outcome": "balance",
+      "sourceTitle": "ผลลัพธ์จักระที่ 5 สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:43.907Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra5-balance.html",
+      "sourceSha256": "4e357d92b99e647afc32cf85b371a12954b7101ec56e671439eae092d987fdf9",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/7ETKxfY0"
+      ]
+    },
+    {
+      "url": "https://chakra.emcthai.com/result-chakra5-unbalance",
+      "path": "/result-chakra5-unbalance",
+      "pageId": 134,
+      "funnelId": 1,
+      "chakra": 5,
+      "outcome": "unbalance",
+      "sourceTitle": "ผลทดสอบจักระที่5-จักระไม่สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:43.908Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra5-unbalance.html",
+      "sourceSha256": "267d28082ca083083856c21ac1e9cfbeb483dc1cede14281e993c86575fc91b5",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/hykibP0e"
+      ]
+    },
+    {
+      "url": "https://chakra.emcthai.com/result-chakra6-balance",
+      "path": "/result-chakra6-balance",
+      "pageId": 135,
+      "funnelId": 1,
+      "chakra": 6,
+      "outcome": "balance",
+      "sourceTitle": "ผลลัพธ์จักระที่ 6 สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:44.256Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra6-balance.html",
+      "sourceSha256": "bd5f8008453d7624a30bdd576b6d5618c9cae3dc44c4fe8e90f70afe37e352c8",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/tCnylQ0F"
+      ]
+    },
+    {
+      "url": "https://chakra.emcthai.com/result-chakra6-unbalance",
+      "path": "/result-chakra6-unbalance",
+      "pageId": 136,
+      "funnelId": 1,
+      "chakra": 6,
+      "outcome": "unbalance",
+      "sourceTitle": "ผลลัพธ์จักระที่ 6 ไม่สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:44.275Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra6-unbalance.html",
+      "sourceSha256": "9e320deb8fd8e850456e324aec2352c36480f522aebee17bbe74b7d8d518db8c",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/sfQquPCu"
+      ]
+    },
+    {
+      "url": "https://chakra.emcthai.com/result-chakra7-balance",
+      "path": "/result-chakra7-balance",
+      "pageId": 138,
+      "funnelId": 1,
+      "chakra": 7,
+      "outcome": "balance",
+      "sourceTitle": "ผลลัพธ์จักระที่ 7 สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:44.248Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra7-balance.html",
+      "sourceSha256": "035439ebe086625057b3582cf9e698e6514f17de53ce1b7048cfc4b87f5a27aa",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/onBVemZh"
+      ]
+    },
+    {
+      "url": "https://chakra.emcthai.com/result-chakra7-unbalance",
+      "path": "/result-chakra7-unbalance",
+      "pageId": 137,
+      "funnelId": 1,
+      "chakra": 7,
+      "outcome": "unbalance",
+      "sourceTitle": "ผลทดสอบจักระที่7-จักระไม่สมดุล",
+      "publicHttpStatus": 200,
+      "sourceRetrievedAt": "2026-11-19T11:23:44.258Z",
+      "sourceHtml": "D:\\Chakra-EMC-Data\\web-source-audit\\quiz\\result-chakra7-unbalance.html",
+      "sourceSha256": "762cef36f04da25ac07dbac84bb3dfed34cf06019ad63c6e3f346e847758825b",
+      "legacyVideoUrls": [
+        "https://adilo.bigcommand.com/watch/3WLE73Zz"
+      ]
+    }
+  ]
+}

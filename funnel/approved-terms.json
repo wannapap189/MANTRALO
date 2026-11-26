@@ -1,0 +1,31 @@
+{
+  "approvedOn": "2026-11-26",
+  "status": "owner-approved-local-preview-only",
+  "shipping": {
+    "amountTHB": 59,
+    "scope": "Printed book; standard areas in Thailand",
+    "otherDestinations": "Quote before payment",
+    "oneBookTotalTHB": 349,
+    "previousAmountTHB": 49,
+    "updatedBy": "Owner requested THB 59 on 2026-11-26"
+  },
+  "course": {
+    "accessMonths": 12,
+    "startsAt": "entitlement_activation",
+    "samePeriodForUpgrade": true,
+    "automaticRenewal": false
+  },
+  "upgrade": {
+    "coursePriceTHB": 2900,
+    "maxVerifiedCreditTHB": 290,
+    "fullCreditBalanceTHB": 2610,
+    "shippingCountsTowardCredit": false
+  },
+  "notYetApproved": [
+    "email delivery SLA",
+    "dispatch SLA",
+    "final downloadable formats",
+    "course media and opening date"
+  ],
+  "liveActivated": false
+}

@@ -1,0 +1,27 @@
+/* Shared reading and touch improvements. Preserve the approved purple identity. */
+:root{--target-size:44px}
+.announcement{font-size:.875rem}
+.announcement a{display:inline-block}
+.section-caption,.detail-eyebrow,.free-kit-note,.small-text{font-size:.875rem;line-height:1.75}
+.bp-page :is(.bp-kicker,.bp-inclusion,.bp-edition,.bp-source-caption,.bp-draft-note,.bp-credit-terms,.bp-step-note,.bp-shipping,.bp-upgrade-hint,.bp-local-note),
+.cl-page :is(.cl-small,.cp-price-note,.cl-pricing-readiness),
+.bp-page :is(.bp-total-row,.bp-offer-list,.bp-credit-card,.bp-combined-total) small{font-size:.875rem;line-height:1.75}
+.bp-mobile-buy>div>span,.cp-mobile-bar>div>span{font-size:.875rem;line-height:1.5}
+.bp-page{--bp-muted:var(--text-secondary)}
+.language-switch button{min-width:var(--target-size);min-height:var(--target-size)}
+button.text-link,.nav-contact,button[data-contact],button[data-filter],button[data-interest],.interest-tabs button{min-height:var(--target-size)}
+button.text-link,button[data-contact]{display:inline-flex;align-items:center}
+.modal-close{min-width:var(--target-size);min-height:var(--target-size)}
+.button-small{min-height:var(--target-size)}
+@media(max-width:850px){
+ .menu-toggle{width:var(--target-size);height:var(--target-size);min-width:var(--target-size);min-height:var(--target-size);flex:none}
+ .language-switch button{min-width:var(--target-size);min-height:var(--target-size)}
+ .header-inner{gap:10px}
+ .interest-tabs button{min-height:var(--target-size)}
+}
+@media(max-width:420px){
+ body:has(.bp-page){padding-bottom:116px}
+ .bp-mobile-buy{gap:12px;padding-inline:16px}
+ .bp-mobile-buy>div{min-width:0;flex:1}
+ .bp-mobile-buy .button{flex:0 1 48%;white-space:normal;line-height:1.5}
+}
